@@ -1,0 +1,254 @@
+2013/01/15 11:13:27 [trace] [app.shipment] 102749Array
+(
+    [0] => 401145
+    [1] => 401197
+    [2] => 401198
+    [3] => 401199
+    [4] => 401201
+    [5] => 401202
+    [6] => 401203
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (306)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (191)
+2013/01/15 11:16:37 [trace] [app.shipment]  SELECT SAMPLE_ID,REQUEST_DATE,SAMPLE_NUMBER,SCREENING_NUMBER,MATERIAL_TYPE,COLLECTION_DATE, SAMPLE_KIT_ID KIT_RANDO, KIT_NUMBER_VALUE KIT_SITE 
+                FROM SHIPMENT_TEST.V_MATERIALS_REQUESTED VMR JOIN 
+                (SELECT RF.PATIENT_NUMBER, RF.SAMPLE_KIT_ID, KN.KIT_NUMBER_VALUE FROM LAB_DEV2.RECEIVED_FILES RF 
+                JOIN LAB_DEV2.PATIENTS PAT ON PAT.SCREENING_NUMBER=RF.PATIENT_NUMBER 
+                LEFT JOIN LAB_DEV2.KIT_NUMBER KN ON PROPERTY_VALUE= PAT.PATIENT_ID 
+                GROUP BY RF.PATIENT_NUMBER, RF.SAMPLE_KIT_ID, KN.KIT_NUMBER_VALUE) KN 
+                ON KN.PATIENT_NUMBER = SCREENING_NUMBER 
+                    WHERE PARCEL_ID=:PARCELID  AND SAMPLE_ID IN (401145,401197,401198,401199,401201,401202,401203)  AND VISIT_NAME <>'SCREENING'
+                GROUP BY SAMPLE_ID,REQUEST_DATE,SAMPLE_NUMBER,SCREENING_NUMBER,MATERIAL_TYPE,COLLECTION_DATE, SAMPLE_KIT_ID, KIT_NUMBER_VALUE ORDER BY SCREENING_NUMBER, SAMPLE_ID
+in C:\wamp\www\breast_yii\protected\modules\shipment\models\ContentPDF.php (39)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (302)
+2013/01/15 11:21:48 [trace] [app.shipment]  SELECT SAMPLE_ID,REQUEST_DATE,SAMPLE_NUMBER,SCREENING_NUMBER,MATERIAL_TYPE,COLLECTION_DATE, SAMPLE_KIT_ID KIT_RANDO, KIT_NUMBER_VALUE KIT_SITE 
+                FROM SHIPMENT_TEST.V_MATERIALS_REQUESTED VMR LEFT JOIN
+                (SELECT RF.PATIENT_NUMBER, RF.SAMPLE_KIT_ID, KN.KIT_NUMBER_VALUE FROM LAB_DEV2.RECEIVED_FILES RF 
+                JOIN LAB_DEV2.PATIENTS PAT ON PAT.SCREENING_NUMBER=RF.PATIENT_NUMBER 
+                LEFT JOIN LAB_DEV2.KIT_NUMBER KN ON PROPERTY_VALUE= PAT.PATIENT_ID 
+                GROUP BY RF.PATIENT_NUMBER, RF.SAMPLE_KIT_ID, KN.KIT_NUMBER_VALUE) KN 
+                ON KN.PATIENT_NUMBER = SCREENING_NUMBER 
+                    WHERE PARCEL_ID=:PARCELID  AND SAMPLE_ID IN (401145,401197,401198,401199,401201,401202,401203)  AND VISIT_NAME <>'SCREENING'
+                GROUP BY SAMPLE_ID,REQUEST_DATE,SAMPLE_NUMBER,SCREENING_NUMBER,MATERIAL_TYPE,COLLECTION_DATE, SAMPLE_KIT_ID,
+                KIT_NUMBER_VALUE ORDER BY SCREENING_NUMBER, SAMPLE_ID
+in C:\wamp\www\breast_yii\protected\modules\shipment\models\ContentPDF.php (39)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (302)
+2013/01/15 11:24:27 [trace] [app.shipment] 7
+in C:\wamp\www\breast_yii\protected\modules\shipment\models\ContentPDF.php (45)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (302)
+2013/01/15 11:26:15 [trace] [app.shipment] Array
+(
+    [2508420001] => Array
+        (
+            [0] => Array
+                (
+                    [SAMPLE_ID] => 401145
+                    [REQUEST_DATE] => 15-JAN-13
+                    [SAMPLE_NUMBER] => 1418
+                    [SCREENING_NUMBER] => 2508420001
+                    [MATERIAL_TYPE] => SERUM
+                    [COLLECTION_DATE] => 08-OCT-12
+                    [KIT_RANDO] => 
+                    [KIT_SITE] => 
+                )
+
+        )
+
+    [2508420003] => Array
+        (
+            [0] => Array
+                (
+                    [SAMPLE_ID] => 401197
+                    [REQUEST_DATE] => 15-JAN-13
+                    [SAMPLE_NUMBER] => 999
+                    [SCREENING_NUMBER] => 2508420003
+                    [MATERIAL_TYPE] => BLOOD
+                    [COLLECTION_DATE] => 13-NOV-12
+                    [KIT_RANDO] => 
+                    [KIT_SITE] => 
+                )
+
+            [1] => Array
+                (
+                    [SAMPLE_ID] => 401198
+                    [REQUEST_DATE] => 15-JAN-13
+                    [SAMPLE_NUMBER] => 801
+                    [SCREENING_NUMBER] => 2508420003
+                    [MATERIAL_TYPE] => BLOOD
+                    [COLLECTION_DATE] => 13-NOV-12
+                    [KIT_RANDO] => 
+                    [KIT_SITE] => 
+                )
+
+            [2] => Array
+                (
+                    [SAMPLE_ID] => 401199
+                    [REQUEST_DATE] => 15-JAN-13
+                    [SAMPLE_NUMBER] => 999
+                    [SCREENING_NUMBER] => 2508420003
+                    [MATERIAL_TYPE] => BLOOD
+                    [COLLECTION_DATE] => 13-NOV-15
+                    [KIT_RANDO] => 
+                    [KIT_SITE] => 
+                )
+
+            [3] => Array
+                (
+                    [SAMPLE_ID] => 401201
+                    [REQUEST_DATE] => 15-JAN-13
+                    [SAMPLE_NUMBER] => 951
+                    [SCREENING_NUMBER] => 2508420003
+                    [MATERIAL_TYPE] => SERUM
+                    [COLLECTION_DATE] => 13-NOV-12
+                    [KIT_RANDO] => 
+                    [KIT_SITE] => 
+                )
+
+            [4] => Array
+                (
+                    [SAMPLE_ID] => 401202
+                    [REQUEST_DATE] => 15-JAN-13
+                    [SAMPLE_NUMBER] => 951
+                    [SCREENING_NUMBER] => 2508420003
+                    [MATERIAL_TYPE] => SERUM
+                    [COLLECTION_DATE] => 13-NOV-12
+                    [KIT_RANDO] => 
+                    [KIT_SITE] => 
+                )
+
+            [5] => Array
+                (
+                    [SAMPLE_ID] => 401203
+                    [REQUEST_DATE] => 15-JAN-13
+                    [SAMPLE_NUMBER] => 951
+                    [SCREENING_NUMBER] => 2508420003
+                    [MATERIAL_TYPE] => SERUM
+                    [COLLECTION_DATE] => 13-NOV-12
+                    [KIT_RANDO] => 
+                    [KIT_SITE] => 
+                )
+
+        )
+
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (312)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (191)
+2013/01/15 11:34:46 [trace] [app.shipment] test trace
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (367)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (193)
+2013/01/15 11:35:23 [trace] [app.shipment] CENTRE_ID : 102749
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (367)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (193)
+2013/01/15 11:38:42 [trace] [app.shipment] CENTRE_ID : 102749
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (367)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (193)
+2013/01/15 11:39:27 [trace] [app.shipment] CENTRE_ID : 102749
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (367)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (193)
+2013/01/15 11:49:34 [trace] [app.shipment] CHINA | 250842 | APHINITY
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (371)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (192)
+2013/01/15 11:49:34 [trace] [app.shipment] Array | Array 
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (377)
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (192)
+2013/01/15 13:54:36 [trace] [app.shipment] Array
+(
+    [2789] => 2789
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (240)
+in C:\wamp\www\breast_yii\index.php (13)
+2013/01/15 14:02:31 [warning] [app.shipment] 7
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (248)
+in C:\wamp\www\breast_yii\index.php (13)
+2013/01/15 14:02:32 [warning] [app.shipment] Array
+(
+    [0] => breast.technical@bordet.be
+)
+Array
+(
+    [0] => wouter.proost@bordet.be
+)
+Array
+(
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (263)
+in C:\wamp\www\breast_yii\index.php (13)
+2013/01/15 15:39:00 [warning] [app.shipment] Array
+(
+    [0] => breast.technical@bordet.be
+)
+Array
+(
+    [0] => wouter.proost@bordet.be
+)
+Array
+(
+    [0] => bjsops@worldcourier.com.cn
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (262)
+in C:\wamp\www\breast_yii\index.php (13)
+2013/01/15 15:55:01 [warning] [app.shipment] Array
+(
+    [0] => breast.technical@bordet.be
+)
+Array
+(
+    [0] => wouter.proost@bordet.be
+)
+Array
+(
+    [0] => bjsops@worldcourier.com.cn
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (263)
+in C:\wamp\www\breast_yii\index.php (13)
+2013/01/15 16:01:57 [warning] [app.shipment] Array
+(
+    [0] => breast.technical@bordet.be
+)
+Array
+(
+    [0] => wouter.proost@bordet.be
+)
+Array
+(
+    [0] => bjsops@worldcourier.com.cn
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (263)
+in C:\wamp\www\breast_yii\index.php (13)
+2013/01/15 16:09:08 [warning] [app.shipment] Array
+(
+    [0] => breast.technical@bordet.be
+)
+Array
+(
+    [0] => wouter.proost@bordet.be
+)
+Array
+(
+    [0] => bjsops@worldcourier.com.cn
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (263)
+in C:\wamp\www\breast_yii\index.php (13)
+2013/01/15 16:13:54 [warning] [app.shipment] Array
+(
+    [0] => breast.technical@bordet.be
+)
+Array
+(
+    [0] => wouter.proost@bordet.be
+)
+Array
+(
+    [0] => bjsops@worldcourier.com.cn
+)
+
+in C:\wamp\www\breast_yii\protected\modules\shipment\controllers\TranslationalController.php (263)
+in C:\wamp\www\breast_yii\index.php (13)

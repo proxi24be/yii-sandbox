@@ -1,0 +1,17 @@
+<div class='row'>
+    <div class='span1'><h3>1</h3></div>
+    <div class='span8'>
+
+        <form class='form-inline' ng-submit='add()'>
+            <input type='text' name='new_study' class='input-xlarge' ng-model='dataToCollect.newStudy'
+                   placeholder='Study name' required>
+            <input type='submit' class='btn btn-primary' value='add'/>
+        </form>
+
+        <form class='form-inline' ng-repeat='study in db.studies' ng-cloak>
+            <input type='text' class='input-xlarge' ng-model='study.DESCRIPTION' required/>
+            <a href='' class='btn btn-warning' ng-click='update(study);'><i class='icon-edit icon-white'></i> update</a>
+        </form>
+
+    </div>
+</div>

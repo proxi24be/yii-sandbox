@@ -1,0 +1,17 @@
+
+Dear Sir or Madam,
+    
+Please be informed that a package containing biological samples will be delivered at your study repository. 
+
+Please find next the package details : 
+
+                  Country: {country}
+         Centre name: {centre_name}
+                  Centre#: {centre}
+BrEAST PARCEL ID: {parcel_id}
+  Courier company: World courier
+
+
+Kind Regards,
+BrEAST Translational Research Coordinator 
+on behalf of BIG

@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f11096d-92e1-4337-989e-f0b532abbbb4" name="Default" comment="" />
+    <ignored path="breast_reborn.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/AphinityController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364672215102" ignored="false" />
+    <file path="/SampleTypeController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364551243200" ignored="false" />
+    <file path="/breast_reborn" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371472541209" ignored="false" />
+    <file path="/SampleDetailsFormModel.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364559123085" ignored="false" />
+    <file path="/Dummy.txt" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371120666196" ignored="false" />
+    <file path="/BrEASTSampleDetailsFormAbstract.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364564936463" ignored="false" />
+    <file path="/VCentresAddress.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364559425232" ignored="false" />
+    <file path="/NewSampleFormModel.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364560960311" ignored="false" />
+    <file path="/MyMap.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364560292305" ignored="false" />
+    <file path="/BiosampleController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364674657988" ignored="false" />
+    <file path="/a.dummy" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371473790771" ignored="false" />
+    <file path="/StudySampleDetailsFormModel.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364563497291" ignored="false" />
+    <file path="/SampleFormController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364983708515" ignored="false" />
+    <file path="/SampleDetailsController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364762102083" ignored="false" />
+    <file path="/sampledetailsform.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364600105268" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/e7101233/css/bootstrap-combined.min.css" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371482953819" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/e7101233/css/bootstrap.min.css" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371482953819" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/e7101233/css/bootstrap.css" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371482953819" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/e7101233/css/bootstrap-responsive.css" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371482953819" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/e7101233/css/bootstrap-responsive.min.css" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371482953819" ignored="false" />
+    <file path="/SampleFormModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364655415815" ignored="false" />
+    <file path="/DataToCollect.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364674215647" ignored="false" />
+    <file path="/DataToCollectTest.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364691284534" ignored="false" />
+    <file path="/MyMapTest.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364669373064" ignored="false" />
+    <file path="/HtmlAttribute.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364742261889" ignored="false" />
+    <file path="/HtmlElementFormTest.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364745061539" ignored="false" />
+    <file path="/HtmlElementForm.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364741908670" ignored="false" />
+    <file path="/BsControlGroupWidget.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364749282480" ignored="false" />
+    <file path="/BSControlGroupWidget.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364749141792" ignored="false" />
+    <file path="/new_sample_form.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364750630844" ignored="false" />
+    <file path="/new_sample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370343950081" ignored="false" />
+    <file path="/MyJson.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364763103024" ignored="false" />
+    <file path="/Factory.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364893687103" ignored="false" />
+    <file path="/FactorySampleTest.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364766947075" ignored="false" />
+    <file path="/Sample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364897651128" ignored="false" />
+    <file path="/TissueTest.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364985232078" ignored="false" />
+    <file path="/Prelevement.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364910238063" ignored="false" />
+    <file path="/a.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364936586129" ignored="false" />
+    <file path="/PRELEVEMENT.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364821381736" ignored="false" />
+    <file path="/m130401_104320_prelevement.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364988749222" ignored="false" />
+    <file path="/PrelevementTest.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364837791549" ignored="false" />
+    <file path="/sample_details_form.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364854703259" ignored="false" />
+    <file path="/FactorySample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364897537544" ignored="false" />
+    <file path="/Tissue.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364985203728" ignored="false" />
+    <file path="/SampleAbstract.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364989857770" ignored="false" />
+    <file path="/MaterialNotes.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364989319344" ignored="false" />
+    <file path="/a.coffee" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364936586891" ignored="false" />
+    <file path="/MaterialLocation.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364936848951" ignored="false" />
+    <file path="/m130402_213315_material_location.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364988952163" ignored="false" />
+    <file path="/MyCDbMigration.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364981116587" ignored="false" />
+    <file path="/NewSampleController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364984695711" ignored="false" />
+    <file path="/a.regexp" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1368617276888" ignored="false" />
+    <file path="/ConsoleTest.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364988353203" ignored="false" />
+    <file path="/m130403_113148_material_note.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1364988888424" ignored="false" />
+    <file path="/m130515_092631_benchmark.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1368610310791" ignored="false" />
+    <file path="/BenchmarkController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1368617801427" ignored="false" />
+    <file path="/index.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371464017141" ignored="false" />
+    <file path="/Benchmark.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1368614741101" ignored="false" />
+    <file path="/m130603_091319_adm_clinical_trial.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370251234541" ignored="false" />
+    <file path="/m130603_091337_adm_visit.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370957169188" ignored="false" />
+    <file path="/m130603_091347_adm_sample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370956141608" ignored="false" />
+    <file path="/m130603_091401_adm_visit_sample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370252071712" ignored="false" />
+    <file path="/m130603_091423_adm_sample_form.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370252177261" ignored="false" />
+    <file path="/m130603_091513_adm_form.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370252261549" ignored="false" />
+    <file path="/m130603_091523_adm_study_form.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370252371808" ignored="false" />
+    <file path="/m130603_091541_adm_property_form.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370252517135" ignored="false" />
+    <file path="/m130603_091553_adm_html_element.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371470156126" ignored="false" />
+    <file path="/m130603_094513_adm_study.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370252801120" ignored="false" />
+    <file path="/BiotrackingController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370264961790" ignored="false" />
+    <file path="/setup_study.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370256512972" ignored="false" />
+    <file path="/edit_study.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371113762934" ignored="false" />
+    <file path="/TrialController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370268788100" ignored="false" />
+    <file path="/AdminAbstractController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370265365440" ignored="false" />
+    <file path="/StudyController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370605930093" ignored="false" />
+    <file path="/AdmStudy.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371207912813" ignored="false" />
+    <file path="/DefaultController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370963076679" ignored="false" />
+    <file path="/AdminLayout.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370962667325" ignored="false" />
+    <file path="/SetupPrototype.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370434568892" ignored="false" />
+    <file path="/PrototypeController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370355784569" ignored="false" />
+    <file path="/StudyModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371048507047" ignored="false" />
+    <file path="/PrototypeModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370354966232" ignored="false" />
+    <file path="/StudyController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371116711618" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/c71968fc/SetupPrototype.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370426771673" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/f5b3813d/jquery-ui-1.9.0.min.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371123079990" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/6ab73845/jquery-1.8.2.min.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371462057107" ignored="false" />
+    <file path="/DefaultController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370434537611" ignored="false" />
+    <file path="/default.html" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370963566937" ignored="false" />
+    <file path="/VisitController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371119746218" ignored="false" />
+    <file path="/edit_visit.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370944882031" ignored="false" />
+    <file path="/VisitModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370861723734" ignored="false" />
+    <file path="/VisitController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370443856611" ignored="false" />
+    <file path="/AdmVisitController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370528968962" ignored="false" />
+    <file path="/AdmVisit.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370946069118" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/7c437fac/js/angular.min.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371132838302" ignored="false" />
+    <file path="/Bs_TableWidget.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370602780186" ignored="false" />
+    <file path="/AdmAbstractModel.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370608972350" ignored="false" />
+    <file path="$PROJECT_DIR$/protected/runtime/application.log" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370611106881" ignored="false" />
+    <file path="/AdminActiveRecord.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370612880110" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/e7101233/js/bootstrap.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370857235669" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/f4dd3d74/controller/StudyController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370861427263" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/f4dd3d74/controller/VisitController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370941535648" ignored="false" />
+    <file path="/m130610_105754_adm_study_visit.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370861976758" ignored="false" />
+    <file path="/StudyVisitModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370960186826" ignored="false" />
+    <file path="/AdmStudyVisitController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370954170494" ignored="false" />
+    <file path="/AdmStudyVisit.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371200487476" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/f4dd3d74/model/StudyVisitModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370873237256" ignored="false" />
+    <file path="/edit_sample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371130303959" ignored="false" />
+    <file path="/SampleController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371461987203" ignored="false" />
+    <file path="/AdmSampleController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370958482048" ignored="false" />
+    <file path="/AdmSample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370954282507" ignored="false" />
+    <file path="/Request.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370954113757" ignored="false" />
+    <file path="/RequestMessage.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370954753189" ignored="false" />
+    <file path="/m130607_122644_adm_study.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370955836928" ignored="false" />
+    <file path="/SampleModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370960285943" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/aa251b61/controller/VisitController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371123079990" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/aa251b61/controller/SampleController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371123079990" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/aa251b61/controller/StudyController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371123079990" ignored="false" />
+    <file path="/metadata.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370963403401" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/459a348f/nivo-slider.css" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1370964173915" ignored="false" />
+    <file path="/AdmCRUDController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371129222359" ignored="false" />
+    <file path="/AdmCrudFactory.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371473899068" ignored="false" />
+    <file path="/GenericModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371122970749" ignored="false" />
+    <file path="/JsonConverterModel.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371120978847" ignored="false" />
+    <file path="/GenericWrapperModel.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371121031861" ignored="false" />
+    <file path="/AdmVisitSample.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371469084375" ignored="false" />
+    <file path="/AdmVisitSampleController.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371469106562" ignored="false" />
+    <file path="/main.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371207549728" ignored="false" />
+    <file path="/edit_sample.html" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371463160964" ignored="false" />
+    <file path="/VisitSampleModel.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371469140282" ignored="false" />
+    <file path="/FormController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371481797738" ignored="false" />
+    <file path="/edit_form.html" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371482841427" ignored="false" />
+    <file path="/m130617_121256_adm_property.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371472502734" ignored="false" />
+    <file path="/m130617_121306_adm_generic_value.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371472287646" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/cec78382/controller/SampleController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371478758809" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/cec78382/controller/FormController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371473009249" ignored="false" />
+    <file path="/AdmGenericValueModel.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371473141739" ignored="false" />
+    <file path="/AdmProperty.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371473200007" ignored="false" />
+    <file path="/HtmlElement.php" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371473780755" ignored="false" />
+    <file path="$PROJECT_DIR$/assets/cec78382/controller/StudyController.js" changelist="7f11096d-92e1-4337-989e-f0b532abbbb4" time="1371476940764" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="breast_reborn" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="FormController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularjs/prototype/controller/FormController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="20" selection-start="2631" selection-end="2631" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#162#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_form.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/edit_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="33" selection-start="3197" selection-end="3197" vertical-scroll-proportion="0.43253234">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_study.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/edit_study.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="8" selection-start="50" selection-end="191" vertical-scroll-proportion="-1.3846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdmCrudFactory.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/helper/AdmCrudFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="51" selection-start="690" selection-end="690" vertical-scroll-proportion="-11.769231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdmStudyVisit.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/biotracking/models/AdmStudyVisit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="38" selection-start="0" selection-end="683" vertical-scroll-proportion="-4.1538463">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudyVisitModel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularjs/prototype/model/StudyVisitModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="30" selection-start="386" selection-end="403" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="breast_reborn" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://db-console:/12b064e4/071cfac7-2f3e-4740-b9f7-93f9df756f0a/">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="0" selection-start="2008" selection-end="2008" vertical-scroll-proportion="-7.4827585">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VisitSampleModel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularjs/prototype/model/VisitSampleModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#162#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/angularjs/prototype/view/edit_sample.html" />
+        <option value="$PROJECT_DIR$/angularjs/prototype/SetupPrototype.js" />
+        <option value="$PROJECT_DIR$/protected/modules/prototype/views/default/index.php" />
+        <option value="$PROJECT_DIR$/protected/modules/biotracking/models/AdmVisitSample.php" />
+        <option value="$PROJECT_DIR$/protected/modules/biotracking/controllers/AdmVisitSampleController.php" />
+        <option value="$PROJECT_DIR$/angularjs/prototype/model/VisitSampleModel.js" />
+        <option value="$PROJECT_DIR$/protected/migrations/m130603_091553_adm_html_element.php" />
+        <option value="$PROJECT_DIR$/protected/migrations/m130617_121306_adm_generic_value.php" />
+        <option value="$PROJECT_DIR$/protected/migrations/m130617_121256_adm_property.php" />
+        <option value="db-console:/12b064e4/071cfac7-2f3e-4740-b9f7-93f9df756f0a/" />
+        <option value="$PROJECT_DIR$/protected/modules/biotracking/models/AdmGenericValueModel.php" />
+        <option value="$PROJECT_DIR$/protected/modules/biotracking/models/AdmProperty.php" />
+        <option value="$PROJECT_DIR$/protected/modules/biotracking/models/HtmlElement.php" />
+        <option value="$PROJECT_DIR$/protected/components/helper/AdmCrudFactory.php" />
+        <option value="$PROJECT_DIR$/angularjs/prototype/controller/FormController.js" />
+        <option value="$PROJECT_DIR$/angularjs/prototype/view/edit_form.html" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php 5.4.6">
+    <include_path>
+      <path value="/usr/share/yii-1.1.13/framework" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biotracking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biotracking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="breast_reborn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editor" />
+    <property name="JdbcConsole.Extract.OpeningQuote" value="'" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/protected/components" />
+    <property name="JdbcConsole.ResultInNewTab" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="JdbcConsole.Extract.ClosingQuote" value="'" />
+    <property name="JdbcConsole.ResultToolbar" value="false" />
+    <property name="Database.TableEditor.Splitter" value="0.7242583" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="JdbcConsole.EnableParameterPattern" value="false" />
+    <property name="JdbcConsole.Extract.IncludeHeader" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="JdbcConsole.ParameterPattern" value="(\?\d*|\:\w+|\@\w+|\$\{[^$\{\}]*\}|\$\w+\$|\#\w+\#)" />
+    <property name="JdbcConsole.ResultPageSize" value="1000" />
+    <property name="JdbcConsole.Extract.IncludeRowNumbers" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="b2f37a41-b524-449b-9d83-9c40afd4003d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/modules/prototype/views" />
+      <recent name="$PROJECT_DIR$/angularjs/prototype" />
+      <recent name="$PROJECT_DIR$/framework/angularjs" />
+      <recent name="$PROJECT_DIR$/protected/modules/prototype/views/layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/components/helper" />
+      <recent name="$PROJECT_DIR$/protected/modules/prototype/views/default" />
+      <recent name="$PROJECT_DIR$/protected/components" />
+      <recent name="$PROJECT_DIR$/protected/models" />
+      <recent name="$PROJECT_DIR$/javascript/jquery" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.PrelevementTest">
+    <configuration default="false" name="HtmlElementFormTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="HtmlElementFormTest" configuration_file="$PROJECT_DIR$/protected/tests/phpunit.xml" file="$PROJECT_DIR$/protected/tests/unit/HtmlElementFormTest.php" scope="Class" use_alternative_configuration_file="true" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FactorySampleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="FactorySampleTest" configuration_file="$PROJECT_DIR$/protected/tests/phpunit.xml" file="$PROJECT_DIR$/protected/tests/unit/FactorySampleTest.php" scope="Class" use_alternative_configuration_file="true" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TissueTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="TissueTest" configuration_file="$PROJECT_DIR$/protected/tests/phpunit.xml" file="$PROJECT_DIR$/protected/tests/unit/TissueTest.php" scope="Class" use_alternative_configuration_file="true" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <RunnerSettings RunnerId="PhpUnitDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpUnitDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SiteTest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/protected/tests/functional/SiteTest.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PrelevementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="PrelevementTest" configuration_file="$PROJECT_DIR$/protected/tests/phpunit.xml" file="$PROJECT_DIR$/protected/tests/unit/PrelevementTest.php" scope="Class" use_alternative_configuration_file="true" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner use_alternative_configuration_file="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="unit test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner class="ConsoleTest" configuration_file="$PROJECT_DIR$/protected/tests/phpunit.xml" file="$PROJECT_DIR$/protected/tests/unit/ConsoleTest.php" scope="Class" use_alternative_configuration_file="true" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.unit test" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.HtmlElementFormTest" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.FactorySampleTest" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.TissueTest" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.SiteTest.php" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.PrelevementTest" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.PrelevementTest" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.TissueTest" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.SiteTest.php" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.FactorySampleTest" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.HtmlElementFormTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f11096d-92e1-4337-989e-f0b532abbbb4" name="Default" comment="" />
+      <created>1364549925420</created>
+      <updated>1364549925420</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33971292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24541833" sideWeight="0.67304623" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20619127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18964143" sideWeight="0.67304623" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32695374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29499468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/protected/migrations/m130617_121256_adm_property.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="449" selection-end="449" vertical-scroll-proportion="0.36950147">
+          <folding>
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472503726" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/12b064e4/071cfac7-2f3e-4740-b9f7-93f9df756f0a/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="2008" selection-end="2008" vertical-scroll-proportion="-7.4827585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/migrations/m130617_121306_adm_generic_value.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="40" selection-start="287" selection-end="287" vertical-scroll-proportion="0.33771107">
+          <folding>
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1371472293958" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/biotracking/models/AdmStudyVisit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="38" selection-start="0" selection-end="683" vertical-scroll-proportion="-4.1538463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/biotracking/models/AdmGenericValue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="1" selection-start="680" selection-end="680" vertical-scroll-proportion="0.836773">
+          <folding>
+            <element signature="e#6#62#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/biotracking/models/AdmSample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/biotracking/models/AdmProperty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="373" selection-end="373" vertical-scroll-proportion="0.3501805">
+          <folding>
+            <element signature="e#6#62#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/biotracking/models/AdmHtmlElement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="161" selection-end="161" vertical-scroll-proportion="0.032490976">
+          <folding>
+            <element signature="e#6#62#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/edit_visit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="24" selection-start="2327" selection-end="2327" vertical-scroll-proportion="-11.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/edit_sample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="19" selection-start="731" selection-end="731" vertical-scroll-proportion="0.6230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/helper/AdmCrudFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="51" selection-start="690" selection-end="690" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/prototype/model/VisitSampleModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="8" selection-start="50" selection-end="191" vertical-scroll-proportion="-1.3846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/edit_study.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/prototype/controller/FormController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="20" selection-start="2631" selection-end="2631" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularjs/prototype/view/edit_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="33" selection-start="3197" selection-end="3197" vertical-scroll-proportion="0.43253234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

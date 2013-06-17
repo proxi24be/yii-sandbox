@@ -1,0 +1,71 @@
+<div ng-cloak>
+
+    <div class='row'>
+        <div class='span5'>
+            <div class='alert alert-info'>
+                <i class='icon-info-sign'></i> The step 1 is <strong>not mandatory</strong>
+                you may skip to step 2.
+            </div>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='span1'><h3>1</h3></div>
+        <div class='span8'>
+
+            <form class='form-inline' ng-submit='add()' name='form_new_visit'>
+                <input type='text' name='new_visit_name' class='input-xlarge' ng-model='dataToCollect.newVisit.VISIT_NAME' placeholder='visit name' required>
+                <input type='text' name='new_visit_interval' class='input-mini toolTip' ng-model='dataToCollect.newVisit.VISIT_INTERVAL'
+                       data-title='Reminder' data-content='The interval must be specified in unit day.'
+                       placeholder="interval" pattern="(\d)+" required>
+                <input type='submit' value='add' class='btn btn-primary'/>
+            </form>
+
+            <form class='form-inline' ng-repeat='visit in db.visits' ng-cloak>
+                <input type='text' class='input-xlarge' ng-model='visit.VISIT_NAME' required/>
+                <input type='text' pattern='(\d)+' class='input-mini' ng-model='visit.VISIT_INTERVAL' required/>
+                <a href='' class='btn btn-warning' ng-click='update(visit);'><i class='icon-edit icon-white'></i> update</a>
+            </form>
+
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class='row'>
+        <div class='span6'>
+            <div class='alert alert-info'>
+                <i class='icon-info-sign'></i> Please select the study and the visit(s) that you want to
+                attach together.
+            </div>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='span1'><h3>2</h3></div>
+        <div class='span4'>
+            <select ng-change='showFreeVisit(); showAttachedVisit();' ng-model='dataToCollect.study' ng-options='study.DESCRIPTION for study in db.studies'>
+            </select>
+            <form class='form-inline' ng-submit='attach()'>
+                <select multiple='multiple' size='10' ng-model='dataToCollect.visits'
+                        ng-options='visit.VISIT_NAME for visit in db.freeVisits'>
+                </select>
+                <input type='submit' value='attach' class='btn btn-primary'/>
+            </form>
+        </div>
+        <div class='span4'>
+            <table class='table table-condensed'>
+                <thead>
+                <tr><th>STUDY</th><th>VISIT</th></tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat='attachedVisit in db.attachedVisits'>
+                    <td>{{dataToCollect.study.DESCRIPTION}}</td>
+                    <td>{{attachedVisit.VISIT_NAME}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

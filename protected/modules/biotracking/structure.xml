@@ -1,0 +1,3733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="">
+  <file path="BiotrackingModule.php" hash="ce25db42b6f40e900af0238ac023f4dd" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\CWebModule</extends>
+      <name>BiotrackingModule</name>
+      <full_name>\BiotrackingModule</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="5" package="Default">
+        <name>init</name>
+        <full_name>init</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="17" package="Default">
+        <name>beforeControllerAction</name>
+        <full_name>beforeControllerAction</full_name>
+        <argument line="17">
+          <name>$controller</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="17">
+          <name>$action</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file BiotrackingModule.php</error>
+      <error line="3" code="50000">No DocBlock was found for \BiotrackingModule</error>
+      <error line="5" code="50010">No DocBlock was found for method init()</error>
+      <error line="17" code="50010">No DocBlock was found for method beforeControllerAction()</error>
+    </parse_markers>
+  </file>
+  <file path="components\HelperForm.class.php" hash="e8a844b62bd49efcfb6f23a7c07358ec" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends/>
+      <name>HelperForm</name>
+      <full_name>\HelperForm</full_name>
+      <docblock line="3">
+        <description>classe qui regroupe tout une liste de fonction pour aider à la génération de FORM pour biotracking</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="10" namespace="global" package="Default">
+        <name>$datas</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="11" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="21" package="Default">
+        <name>setDataToDisplay</name>
+        <full_name>setDataToDisplay</full_name>
+        <argument line="21">
+          <name>$datas</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>getArray</name>
+        <full_name>getArray</full_name>
+        <argument line="26">
+          <name>$models</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="26">
+          <name>$questionID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="26">
+          <name>$emptyValue</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="43" package="Default">
+        <name>getListDataToDisplay</name>
+        <full_name>getListDataToDisplay</full_name>
+        <argument line="43">
+          <name>$questionID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="43">
+          <name>$emptyValie</name>
+          <default>false</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file components\HelperForm.class.php</error>
+      <error line="10" code="50018">No DocBlock was found for property $datas</error>
+      <error line="11" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="16" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="21" code="50010">No DocBlock was found for method setDataToDisplay()</error>
+      <error line="26" code="50010">No DocBlock was found for method getArray()</error>
+      <error line="43" code="50010">No DocBlock was found for method getListDataToDisplay()</error>
+    </parse_markers>
+  </file>
+  <file path="components\UserInterface.php" hash="edc598d20994587fcc391e3bdbd9c510" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends/>
+      <name>UserInterface</name>
+      <full_name>\UserInterface</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="5" package="Default">
+        <name>getInterfaceItems</name>
+        <full_name>getInterfaceItems</full_name>
+        <argument line="5">
+          <name>$profile</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="private" namespace="global" line="12" package="Default">
+        <name>PiItems</name>
+        <full_name>PiItems</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file components\UserInterface.php</error>
+      <error line="3" code="50000">No DocBlock was found for \UserInterface</error>
+      <error line="5" code="50010">No DocBlock was found for method getInterfaceItems()</error>
+      <error line="12" code="50010">No DocBlock was found for method PiItems()</error>
+    </parse_markers>
+  </file>
+  <file path="controllers\BioSampleController.php" hash="89369bd43d7ed6da912c8ab178f4f1a8" package="Default">
+    <include line="3" type="Require Once" package="Default">
+      <name>abstract/Biotracking.class.php</name>
+    </include>
+    <include line="4" type="Require Once" package="Default">
+      <name>abstract/BrEASTSampleDetailsForm.php</name>
+    </include>
+    <include line="5" type="Require Once" package="Default">
+      <name>custom/MyKitNumber.class.php</name>
+    </include>
+    <include line="6" type="Require Once" package="Default">
+      <name>custom/MyPatient.class.php</name>
+    </include>
+    <include line="7" type="Require Once" package="Default">
+      <name>custom/MySampleNumber.class.php</name>
+    </include>
+    <include line="8" type="Require Once" package="Default">
+      <name>custom/FactorySample.php</name>
+    </include>
+    <include line="9" type="Require Once" package="Default">
+      <name>abstract/Samples.php</name>
+    </include>
+    <include line="10" type="Require Once" package="Default">
+      <name>custom/Tissue.php</name>
+    </include>
+    <include line="71" type="Require Once" package="Default">
+      <name>form/aphinity/NewSampleForm.php</name>
+    </include>
+    <include line="72" type="Require Once" package="Default">
+      <name>form/aphinity/SampleDetailsForm.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="13" package="Default">
+      <extends>\Controller</extends>
+      <name>BioSampleController</name>
+      <full_name>\BioSampleController</full_name>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$layout</name>
+        <default>"/layouts/biotrackingLayout"</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="20" package="Default">
+        <name>filters</name>
+        <full_name>filters</full_name>
+        <docblock line="17">
+          <description></description>
+          <long-description></long-description>
+          <tag line="17" name="return" description="action filters" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="31" package="Default">
+        <name>accessRules</name>
+        <full_name>accessRules</full_name>
+        <docblock line="26">
+          <description>Specifies the access control rules.</description>
+          <long-description>&lt;p&gt;This method is used by the 'accessControl' filter.&lt;/p&gt;</long-description>
+          <tag line="26" name="return" description="access control rules" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>actionNewSample</name>
+        <full_name>actionNewSample</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="60" package="Default">
+        <name>actionGetSampleDetails</name>
+        <full_name>actionGetSampleDetails</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="101" package="Default">
+        <name>actionSaveSampleDetailsForm</name>
+        <full_name>actionSaveSampleDetailsForm</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file controllers\BioSampleController.php</error>
+      <error line="13" code="50000">No DocBlock was found for \BioSampleController</error>
+      <error line="15" code="50018">No DocBlock was found for property $layout</error>
+      <error line="17" code="50012">No short description for method filters()</error>
+      <error line="44" code="50010">No DocBlock was found for method actionNewSample()</error>
+      <error line="60" code="50010">No DocBlock was found for method actionGetSampleDetails()</error>
+      <error line="101" code="50010">No DocBlock was found for method actionSaveSampleDetailsForm()</error>
+    </parse_markers>
+  </file>
+  <file path="controllers\CentralLabController.php" hash="aecc471be04bcef29871a4f312b2fe08" package="Default">
+    <include line="2" type="Require Once" package="Default">
+      <name>MyUtils.class.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="4" package="Default">
+      <extends>\Controller</extends>
+      <name>CentralLabController</name>
+      <full_name>\CentralLabController</full_name>
+      <property final="false" static="false" visibility="private" line="6" namespace="global" package="Default">
+        <name>$url</name>
+        <default>"https://www.clinifax.org/breast_yii/index.php/biotracking/centrallab/ventanaform"</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$layout</name>
+        <default>"/layouts/column1"</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="9" package="Default">
+        <name>actionVentanaForm</name>
+        <full_name>actionVentanaForm</full_name>
+        <argument line="9">
+          <name>$materialID</name>
+          <default>0</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="35" package="Default">
+        <name>actionSuccess</name>
+        <full_name>actionSuccess</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="40" package="Default">
+        <name>actionReturnSample</name>
+        <full_name>actionReturnSample</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="52" package="Default">
+        <name>actionGetTableSampleReturn</name>
+        <full_name>actionGetTableSampleReturn</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="81" package="Default">
+        <name>actionCompletedFormTissue</name>
+        <full_name>actionCompletedFormTissue</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="88" package="Default">
+        <name>actionDisplayDatatable</name>
+        <full_name>actionDisplayDatatable</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="93" package="Default">
+        <name>insertIntoResponse</name>
+        <full_name>insertIntoResponse</full_name>
+        <argument line="93">
+          <name>$values</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="93">
+          <name>$fields</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="110" package="Default">
+        <name>getContactInformation</name>
+        <full_name>getContactInformation</full_name>
+        <argument line="110">
+          <name>$materialID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file controllers\CentralLabController.php</error>
+      <error line="4" code="50000">No DocBlock was found for \CentralLabController</error>
+      <error line="6" code="50018">No DocBlock was found for property $url</error>
+      <error line="7" code="50018">No DocBlock was found for property $layout</error>
+      <error line="9" code="50010">No DocBlock was found for method actionVentanaForm()</error>
+      <error line="35" code="50010">No DocBlock was found for method actionSuccess()</error>
+      <error line="40" code="50010">No DocBlock was found for method actionReturnSample()</error>
+      <error line="52" code="50010">No DocBlock was found for method actionGetTableSampleReturn()</error>
+      <error line="81" code="50010">No DocBlock was found for method actionCompletedFormTissue()</error>
+      <error line="88" code="50010">No DocBlock was found for method actionDisplayDatatable()</error>
+      <error line="93" code="50010">No DocBlock was found for method insertIntoResponse()</error>
+      <error line="110" code="50010">No DocBlock was found for method getContactInformation()</error>
+    </parse_markers>
+  </file>
+  <file path="controllers\Her2FormController.php" hash="1ea75bfd0cc03b054f6a6775cab524a3" package="Default">
+    <include line="3" type="Require Once" package="Default">
+      <name>HelperForm.class.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="5" package="Default">
+      <extends>\Controller</extends>
+      <name>Her2FormController</name>
+      <full_name>\Her2FormController</full_name>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$layout</name>
+        <default>"/layouts/column1"</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="12" package="Default">
+        <name>filters</name>
+        <full_name>filters</full_name>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+          <tag line="9" name="return" description="action filters" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="23" package="Default">
+        <name>accessRules</name>
+        <full_name>accessRules</full_name>
+        <docblock line="18">
+          <description>Specifies the access control rules.</description>
+          <long-description>&lt;p&gt;This method is used by the 'accessControl' filter.&lt;/p&gt;</long-description>
+          <tag line="18" name="return" description="access control rules" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="37" package="Default">
+        <name>actionLocalForm</name>
+        <full_name>actionLocalForm</full_name>
+        <argument line="37">
+          <name>$sampleID</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="97" package="Default">
+        <name>actionSuccess</name>
+        <full_name>actionSuccess</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="102" package="Default">
+        <name>actionReturnSample</name>
+        <full_name>actionReturnSample</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="113" package="Default">
+        <name>actionGetTableSampleReturn</name>
+        <full_name>actionGetTableSampleReturn</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="146" package="Default">
+        <name>getContactInformation</name>
+        <full_name>getContactInformation</full_name>
+        <argument line="146">
+          <name>$materialID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file controllers\Her2FormController.php</error>
+      <error line="5" code="50000">No DocBlock was found for \Her2FormController</error>
+      <error line="7" code="50018">No DocBlock was found for property $layout</error>
+      <error line="9" code="50012">No short description for method filters()</error>
+      <error line="37" code="50010">No DocBlock was found for method actionLocalForm()</error>
+      <error line="97" code="50010">No DocBlock was found for method actionSuccess()</error>
+      <error line="102" code="50010">No DocBlock was found for method actionReturnSample()</error>
+      <error line="113" code="50010">No DocBlock was found for method actionGetTableSampleReturn()</error>
+      <error line="146" code="50010">No DocBlock was found for method getContactInformation()</error>
+    </parse_markers>
+  </file>
+  <file path="controllers\MainController.php" hash="bb55b9b79d3e6832f0bca2a3c6761fd0" package="Default">
+    <include line="3" type="Require Once" package="Default">
+      <name>custom/MySample.class.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="5" package="Default">
+      <extends>\Controller</extends>
+      <name>MainController</name>
+      <full_name>\MainController</full_name>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$layout</name>
+        <default>"/layouts/biotrackingLayout"</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="12" package="Default">
+        <name>filters</name>
+        <full_name>filters</full_name>
+        <docblock line="9">
+          <description></description>
+          <long-description></long-description>
+          <tag line="9" name="return" description="action filters" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="23" package="Default">
+        <name>accessRules</name>
+        <full_name>accessRules</full_name>
+        <docblock line="18">
+          <description>Specifies the access control rules.</description>
+          <long-description>&lt;p&gt;This method is used by the 'accessControl' filter.&lt;/p&gt;</long-description>
+          <tag line="18" name="return" description="access control rules" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="Default">
+        <name>actionIndex</name>
+        <full_name>actionIndex</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="43" package="Default">
+        <name>actionFaq</name>
+        <full_name>actionFaq</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="48" package="Default">
+        <name>actionContactUs</name>
+        <full_name>actionContactUs</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="53" package="Default">
+        <name>actionMySamples</name>
+        <full_name>actionMySamples</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="82" package="Default">
+        <name>actionGetTableForVisit</name>
+        <full_name>actionGetTableForVisit</full_name>
+        <argument line="82">
+          <name>$index</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="89" package="Default">
+        <name>actionSampleByVisit</name>
+        <full_name>actionSampleByVisit</full_name>
+        <argument line="89">
+          <name>$visitName</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="102" package="Default">
+        <name>actionSampleCompletedForm</name>
+        <full_name>actionSampleCompletedForm</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="110" package="Default">
+        <name>actionSampleCompletedFormTissue</name>
+        <full_name>actionSampleCompletedFormTissue</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="118" package="Default">
+        <name>actionSampleCompletedFormOther</name>
+        <full_name>actionSampleCompletedFormOther</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file controllers\MainController.php</error>
+      <error line="5" code="50000">No DocBlock was found for \MainController</error>
+      <error line="7" code="50018">No DocBlock was found for property $layout</error>
+      <error line="9" code="50012">No short description for method filters()</error>
+      <error line="38" code="50010">No DocBlock was found for method actionIndex()</error>
+      <error line="43" code="50010">No DocBlock was found for method actionFaq()</error>
+      <error line="48" code="50010">No DocBlock was found for method actionContactUs()</error>
+      <error line="53" code="50010">No DocBlock was found for method actionMySamples()</error>
+      <error line="82" code="50010">No DocBlock was found for method actionGetTableForVisit()</error>
+      <error line="89" code="50010">No DocBlock was found for method actionSampleByVisit()</error>
+      <error line="102" code="50010">No DocBlock was found for method actionSampleCompletedForm()</error>
+      <error line="110" code="50010">No DocBlock was found for method actionSampleCompletedFormTissue()</error>
+      <error line="118" code="50010">No DocBlock was found for method actionSampleCompletedFormOther()</error>
+    </parse_markers>
+  </file>
+  <file path="controllers\PatientController.php" hash="f4f8a8486ba9680ee88eb1dabc6e8d95" package="Default">
+    <include line="3" type="Require Once" package="Default">
+      <name>abstract/Biotracking.class.php</name>
+    </include>
+    <include line="4" type="Require Once" package="Default">
+      <name>custom/MyPatient.class.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends>\Controller</extends>
+      <name>PatientController</name>
+      <full_name>\PatientController</full_name>
+      <property final="false" static="false" visibility="public" line="8" namespace="global" package="Default">
+        <name>$layout</name>
+        <default>"/layouts/biotrackingLayout"</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="13" package="Default">
+        <name>filters</name>
+        <full_name>filters</full_name>
+        <docblock line="10">
+          <description></description>
+          <long-description></long-description>
+          <tag line="10" name="return" description="action filters" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>accessRules</name>
+        <full_name>accessRules</full_name>
+        <docblock line="19">
+          <description>Specifies the access control rules.</description>
+          <long-description>&lt;p&gt;This method is used by the 'accessControl' filter.&lt;/p&gt;</long-description>
+          <tag line="19" name="return" description="access control rules" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="Default">
+        <name>actionGetVisit</name>
+        <full_name>actionGetVisit</full_name>
+        <argument line="38">
+          <name>$patientID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="56" package="Default">
+        <name>actionGetSampleType</name>
+        <full_name>actionGetSampleType</full_name>
+        <argument line="56">
+          <name>$patientID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="56">
+          <name>$visitID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file controllers\PatientController.php</error>
+      <error line="6" code="50000">No DocBlock was found for \PatientController</error>
+      <error line="8" code="50018">No DocBlock was found for property $layout</error>
+      <error line="10" code="50012">No short description for method filters()</error>
+      <error line="38" code="50010">No DocBlock was found for method actionGetVisit()</error>
+      <error line="56" code="50010">No DocBlock was found for method actionGetSampleType()</error>
+    </parse_markers>
+  </file>
+  <file path="controllers\SampleTypeController.php" hash="a6d7c86bf39712ce0bc77fd0e3c43ec0" package="Default">
+    <include line="3" type="Require Once" package="Default">
+      <name>abstract/Biotracking.class.php</name>
+    </include>
+    <include line="4" type="Require Once" package="Default">
+      <name>custom/MyPatient.class.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends>\Controller</extends>
+      <name>SampleTypeController</name>
+      <full_name>\SampleTypeController</full_name>
+      <property final="false" static="false" visibility="public" line="8" namespace="global" package="Default">
+        <name>$layout</name>
+        <default>"/layouts/biotrackingLayout"</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="13" package="Default">
+        <name>filters</name>
+        <full_name>filters</full_name>
+        <docblock line="10">
+          <description></description>
+          <long-description></long-description>
+          <tag line="10" name="return" description="action filters" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>accessRules</name>
+        <full_name>accessRules</full_name>
+        <docblock line="19">
+          <description>Specifies the access control rules.</description>
+          <long-description>&lt;p&gt;This method is used by the 'accessControl' filter.&lt;/p&gt;</long-description>
+          <tag line="19" name="return" description="access control rules" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="Default">
+        <name>actionGetSampleType</name>
+        <full_name>actionGetSampleType</full_name>
+        <argument line="38">
+          <name>$visitID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file controllers\SampleTypeController.php</error>
+      <error line="6" code="50000">No DocBlock was found for \SampleTypeController</error>
+      <error line="8" code="50018">No DocBlock was found for property $layout</error>
+      <error line="10" code="50012">No short description for method filters()</error>
+      <error line="38" code="50010">No DocBlock was found for method actionGetSampleType()</error>
+    </parse_markers>
+  </file>
+  <file path="models\abstract\Biotracking.class.php" hash="560ddd89aa46721418be1b8268f55079" package="Default">
+    <class final="false" abstract="true" namespace="global" line="3" package="Default">
+      <extends/>
+      <name>Biotracking</name>
+      <full_name>\Biotracking</full_name>
+      <property final="false" static="false" visibility="public" line="6" namespace="global" package="Default">
+        <name>$schemaLab</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$conn</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="9" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="19" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>getSchemaLab</name>
+        <full_name>getSchemaLab</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\abstract\Biotracking.class.php</error>
+      <error line="3" code="50000">No DocBlock was found for \Biotracking</error>
+      <error line="6" code="50018">No DocBlock was found for property $schemaLab</error>
+      <error line="7" code="50018">No DocBlock was found for property $conn</error>
+      <error line="9" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="19" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="24" code="50010">No DocBlock was found for method getSchemaLab()</error>
+    </parse_markers>
+  </file>
+  <file path="models\abstract\BrEASTSampleDetailsForm.php" hash="2ad8b2d49c184786f8ab4a19068f9f48" package="Default">
+    <class final="false" abstract="true" namespace="global" line="10" package="Default">
+      <extends>\CFormModel</extends>
+      <name>BrEASTSampleDetailsForm</name>
+      <full_name>\BrEASTSampleDetailsForm</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 11/01/13
+Time: 11:06
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="12" namespace="global" package="Default">
+        <name>$VISIT_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="13" namespace="global" package="Default">
+        <name>$visitName</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="14" namespace="global" package="Default">
+        <name>$sampleType</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$MATERIAL_TYPE_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="16" namespace="global" package="Default">
+        <name>$studyId</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="18" namespace="global" package="Default">
+        <name>$_listTemperature</name>
+        <default>array("-20C", "-70C or below")</default>
+      </property>
+      <property final="false" static="false" visibility="private" line="19" namespace="global" package="Default">
+        <name>$_studyName</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="21" package="Default">
+        <name>beforeValidate</name>
+        <full_name>beforeValidate</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="36" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="43" package="Default">
+        <name>attributeLabels</name>
+        <full_name>attributeLabels</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Default">
+        <name>getListTemperature</name>
+        <full_name>getListTemperature</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="56" package="Default">
+        <name>getListCountry</name>
+        <full_name>getListCountry</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="61" package="Default">
+        <name>getListValueOfProperty</name>
+        <full_name>getListValueOfProperty</full_name>
+        <argument line="61">
+          <name>$propertyName</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="66" package="Default">
+        <name>filterFixatives</name>
+        <full_name>filterFixatives</full_name>
+        <argument line="66">
+          <name>$filter</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="99" package="Default">
+        <name>filteredByGenericValue</name>
+        <full_name>filteredByGenericValue</full_name>
+        <argument line="99">
+          <name>$model</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="99">
+          <name>$filter</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="99">
+          <name>$value</name>
+          <default>""</default>
+          <type/>
+        </argument>
+        <argument line="99">
+          <name>$textField</name>
+          <default>""</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\abstract\BrEASTSampleDetailsForm.php</error>
+      <error line="12" code="50018">No DocBlock was found for property $VISIT_ID</error>
+      <error line="13" code="50018">No DocBlock was found for property $visitName</error>
+      <error line="14" code="50018">No DocBlock was found for property $sampleType</error>
+      <error line="15" code="50018">No DocBlock was found for property $MATERIAL_TYPE_ID</error>
+      <error line="16" code="50018">No DocBlock was found for property $studyId</error>
+      <error line="18" code="50018">No DocBlock was found for property $_listTemperature</error>
+      <error line="19" code="50018">No DocBlock was found for property $_studyName</error>
+      <error line="21" code="50010">No DocBlock was found for method beforeValidate()</error>
+      <error line="36" code="50010">No DocBlock was found for method rules()</error>
+      <error line="43" code="50010">No DocBlock was found for method attributeLabels()</error>
+      <error line="51" code="50010">No DocBlock was found for method getListTemperature()</error>
+      <error line="56" code="50010">No DocBlock was found for method getListCountry()</error>
+      <error line="61" code="50010">No DocBlock was found for method getListValueOfProperty()</error>
+      <error line="66" code="50010">No DocBlock was found for method filterFixatives()</error>
+      <error line="99" code="50010">No DocBlock was found for method filteredByGenericValue()</error>
+    </parse_markers>
+  </file>
+  <file path="models\abstract\Samples.php" hash="bcecaaf0eb80b41f998055f31274e03b" package="Default">
+    <class final="false" abstract="true" namespace="global" line="10" package="Default">
+      <extends/>
+      <name>Samples</name>
+      <full_name>\Samples</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 14/01/13
+Time: 12:00
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="12" namespace="global" package="Default">
+        <name>$_materialTypeProperties</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="13" namespace="global" package="Default">
+        <name>$_values</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="14" namespace="global" package="Default">
+        <name>$_materialTypeID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="15" namespace="global" package="Default">
+        <name>$_userID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="16" namespace="global" package="Default">
+        <name>$_studyID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="19" namespace="global" package="Default">
+        <name>$prelevementID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="20" namespace="global" package="Default">
+        <name>$materialID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="21" namespace="global" package="Default">
+        <name>$noteID</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="23" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="23">
+          <name>$values</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="23">
+          <name>$materialTypeProperties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="31" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="39" package="Default">
+        <name>createPrelevement</name>
+        <full_name>createPrelevement</full_name>
+        <docblock line="35">
+          <description></description>
+          <long-description></long-description>
+          <tag line="35" name="return" description="ID du nouveau record créer" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="35" name="throws" description="erreur de validation" type="\Exception">
+            <type by_reference="false">\Exception</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="61" package="Default">
+        <name>createMaterials</name>
+        <full_name>createMaterials</full_name>
+        <docblock line="57">
+          <description></description>
+          <long-description></long-description>
+          <tag line="57" name="return" description="ID du nouveau record créer" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="57" name="throws" description="erreur de validation" type="\Exception">
+            <type by_reference="false">\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="61">
+          <name>$prelevementID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="75" package="Default">
+        <name>createMaterialDetails</name>
+        <full_name>createMaterialDetails</full_name>
+        <argument line="75">
+          <name>$materialID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="75">
+          <name>$values</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="93" package="Default">
+        <name>createMaterialLocation</name>
+        <full_name>createMaterialLocation</full_name>
+        <argument line="93">
+          <name>$materialID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="93">
+          <name>$locationID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="93">
+          <name>$locTypeID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="111" package="Default">
+        <name>createMaterialNote</name>
+        <full_name>createMaterialNote</full_name>
+        <docblock line="104">
+          <description></description>
+          <long-description></long-description>
+          <tag line="104" name="param" description="" type="\" variable="$materialID"/>
+          <tag line="104" name="param" description="" type="\" variable="$note"/>
+          <tag line="104" name="param" description="" type="\" variable="$userID"/>
+          <tag line="104" name="return" description="ID du nouveaux records creer" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="104" name="throws" description="si validation erreur" type="\Exception">
+            <type by_reference="false">\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="111">
+          <name>$materialID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="111">
+          <name>$note</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="111">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="129" package="Default">
+        <name>updateMaterialDetails</name>
+        <full_name>updateMaterialDetails</full_name>
+        <argument line="129">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="135" package="Default">
+        <name>get_materialTypeProperties</name>
+        <full_name>get_materialTypeProperties</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="139" package="Default">
+        <name>getValues</name>
+        <full_name>getValues</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="144" package="Default">
+        <name>createSampleInformationFollowingBasicBusiness</name>
+        <full_name>createSampleInformationFollowingBasicBusiness</full_name>
+      </method>
+      <method final="false" abstract="true" static="false" visibility="public" namespace="global" line="154" package="Default">
+        <name>createSampleInformation</name>
+        <full_name>createSampleInformation</full_name>
+      </method>
+      <method final="false" abstract="true" static="false" visibility="public" namespace="global" line="156" package="Default">
+        <name>updateSampleInformation</name>
+        <full_name>updateSampleInformation</full_name>
+        <argument line="156">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\abstract\Samples.php</error>
+      <error line="12" code="50018">No DocBlock was found for property $_materialTypeProperties</error>
+      <error line="13" code="50018">No DocBlock was found for property $_values</error>
+      <error line="14" code="50018">No DocBlock was found for property $_materialTypeID</error>
+      <error line="15" code="50018">No DocBlock was found for property $_userID</error>
+      <error line="16" code="50018">No DocBlock was found for property $_studyID</error>
+      <error line="19" code="50018">No DocBlock was found for property $prelevementID</error>
+      <error line="20" code="50018">No DocBlock was found for property $materialID</error>
+      <error line="21" code="50018">No DocBlock was found for property $noteID</error>
+      <error line="23" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="31" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="35" code="50012">No short description for method createPrelevement()</error>
+      <error line="57" code="50012">No short description for method createMaterials()</error>
+      <error line="57" code="50015">Argument $prelevementID is missing from the Docblock of createMaterials()</error>
+      <error line="75" code="50010">No DocBlock was found for method createMaterialDetails()</error>
+      <error line="93" code="50010">No DocBlock was found for method createMaterialLocation()</error>
+      <error line="104" code="50012">No short description for method createMaterialNote()</error>
+      <error line="129" code="50010">No DocBlock was found for method updateMaterialDetails()</error>
+      <error line="135" code="50010">No DocBlock was found for method get_materialTypeProperties()</error>
+      <error line="139" code="50010">No DocBlock was found for method getValues()</error>
+      <error line="144" code="50010">No DocBlock was found for method createSampleInformationFollowingBasicBusiness()</error>
+      <error line="154" code="50010">No DocBlock was found for method createSampleInformation()</error>
+      <error line="156" code="50010">No DocBlock was found for method updateSampleInformation()</error>
+    </parse_markers>
+  </file>
+  <file path="models\AphinityLocalForm.php" hash="7f0e4fe466382e027c7976eec8ba66f6" package="Default">
+    <class final="false" abstract="false" namespace="global" line="5" package="Default">
+      <extends>\CFormModel</extends>
+      <name>AphinityLocalForm</name>
+      <full_name>\AphinityLocalForm</full_name>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$pathologicalStage</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="8" namespace="global" package="Default">
+        <name>$sizeInvComp</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="10" namespace="global" package="Default">
+        <name>$IHCPerformed</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="11" namespace="global" package="Default">
+        <name>$IHCTestDate</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="12" namespace="global" package="Default">
+        <name>$IHCResult</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="13" namespace="global" package="Default">
+        <name>$percInvStaining</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="14" namespace="global" package="Default">
+        <name>$stainingAntibody</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$stainingAntibodyOther</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="16" namespace="global" package="Default">
+        <name>$IHCLocalGuidelines</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="17" namespace="global" package="Default">
+        <name>$IHCLocalGuidelinesNA</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="18" namespace="global" package="Default">
+        <name>$IHCPositivity</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="19" namespace="global" package="Default">
+        <name>$IHCCellPos</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="21" namespace="global" package="Default">
+        <name>$ISHDualPerformed</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="22" namespace="global" package="Default">
+        <name>$ISHDualTestDate</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="23" namespace="global" package="Default">
+        <name>$ISHKit</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="24" namespace="global" package="Default">
+        <name>$ISHKitOther</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="25" namespace="global" package="Default">
+        <name>$ISHDualResult</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="26" namespace="global" package="Default">
+        <name>$ISHDual17RatioUnit</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="27" namespace="global" package="Default">
+        <name>$ISHDual17RatioDecimal</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="28" namespace="global" package="Default">
+        <name>$ISHDualGeneCopyNumber</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="29" namespace="global" package="Default">
+        <name>$ISHDual17CopyNumber</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="31" namespace="global" package="Default">
+        <name>$ISHSinglePerformed</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="32" namespace="global" package="Default">
+        <name>$ISHSingleTestDate</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="33" namespace="global" package="Default">
+        <name>$ISHSingleMethod</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="34" namespace="global" package="Default">
+        <name>$ISHSingleKit</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="35" namespace="global" package="Default">
+        <name>$ISHSingleKitCommercial</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="36" namespace="global" package="Default">
+        <name>$ISHSingleResult</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="37" namespace="global" package="Default">
+        <name>$ISHSingleGeneCopyNumber</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="38" namespace="global" package="Default">
+        <name>$ISHSingleAmplifiedOrNot</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="39" namespace="global" package="Default">
+        <name>$ISHSingleAmplifiedOrNotGeneCopy</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="40" namespace="global" package="Default">
+        <name>$ISHSingleAmplifiedOrNotOtherSpecify</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="42" namespace="global" package="Default">
+        <name>$localReceptorER</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="43" namespace="global" package="Default">
+        <name>$localReceptorPGR</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="44" namespace="global" package="Default">
+        <name>$localComment</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="45" namespace="global" package="Default">
+        <name>$localPathologistSigned</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="47" namespace="global" package="Default">
+        <name>$sampleID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="48" namespace="global" package="Default">
+        <name>$formID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="49" namespace="global" package="Default">
+        <name>$update</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="50" namespace="global" package="Default">
+        <name>$fields</name>
+        <default>array("sizeInvComp" =&gt; 35, "pathologicalStage" =&gt; 221, "IHCPerformed" =&gt; 222, "IHCTestDate" =&gt; 223, "IHCResult" =&gt; 12, "percInvStaining" =&gt; 224, "stainingAntibody" =&gt; 225, "stainingAntibodyOther" =&gt; 226, "IHCLocalGuidelines" =&gt; 227, "IHCLocalGuidelinesNA" =&gt; 228, "IHCPositivity" =&gt; 229, "IHCCellPos" =&gt; 230, "ISHDualPerformed" =&gt; 220, "ISHDualTestDate" =&gt; 231, "ISHKit" =&gt; 232, "ISHKitOther" =&gt; 233, "ISHDualResult" =&gt; 234, "ISHDual17RatioUnit" =&gt; 235, "ISHDual17RatioDecimal" =&gt; 236, "ISHDualGeneCopyNumber" =&gt; 237, "ISHDual17CopyNumber" =&gt; 238, "ISHSinglePerformed" =&gt; 242, "ISHSingleTestDate" =&gt; 243, "ISHSingleMethod" =&gt; 244, "ISHSingleKit" =&gt; 245, "ISHSingleKitCommercial" =&gt; 246, "ISHSingleResult" =&gt; 247, "ISHSingleGeneCopyNumber" =&gt; 248, "ISHSingleAmplifiedOrNot" =&gt; 249, "ISHSingleAmplifiedOrNotGeneCopy" =&gt; 250, "ISHSingleAmplifiedOrNotOtherSpecify" =&gt; 251, "localReceptorER" =&gt; 82, "localReceptorPGR" =&gt; 83, "localComment" =&gt; 43, "localPathologistSigned" =&gt; 57)</default>
+      </property>
+      <property final="false" static="false" visibility="private" line="95" namespace="global" package="Default">
+        <name>$oldValueToNewValue</name>
+        <default>array(12 =&gt; array("0" =&gt; "0", "1" =&gt; "1+", "2" =&gt; "2+", "3" =&gt; "3+"), 225 =&gt; array("Dako Hercep Test" =&gt; "Dako HercopTest", "Lab Developed Test" =&gt; "Lab developed test", "other" =&gt; "Other", "Unknow or not available" =&gt; "Unknown or not available"), 227 =&gt; array("Not Available" =&gt; "Not available"), 229 =&gt; array("ASCO/CAP" =&gt; "ASCO/CAP guidelines (Complete membrane staining in &gt;30% of tumor cells)", "Approved label" =&gt; "Approved label (Complete membrane staining in &gt;10% of tumor cells)"), 232 =&gt; array("Lab Developed" =&gt; "Lab developed test", "Abbott" =&gt; "Abbott PathVysion HER2 (FISH)", "Dako Fish" =&gt; "DAKO HER2 FISH PharmDx (FISH)", "Leica" =&gt; "Leica BOND FISH", "Ventana" =&gt; "Ventana INFORM HER2 (ddISH)", "Invitrogen" =&gt; "Invitrogen SPoT-Light HER2 (CISH)", "Dako Cish" =&gt; "DAKO HER2 DuoCISH pharmDX (CISH)", "Other" =&gt; "Other commercial ISH test", "Unknown" =&gt; "Unknown or not available"), 238 =&gt; array("Polysomy" =&gt; "Polysomy (3 or more signals in &gt;= 30% of cells)", "Monosomy" =&gt; "Monosomy (60% of cells with one or no signals)", "Normal" =&gt; "Normal", "Not Available" =&gt; "Not available"), 245 =&gt; array("Lab developed" =&gt; "Lab developed reagent"), 247 =&gt; array("Not amplified" =&gt; "Not Amplified"), 249 =&gt; array("asco" =&gt; "ASCO/CAP guidelines (HER2/CEP17 ratio &gt;= 2.2)", "CEP17" =&gt; "Assay label (HER2/CEP17 ratio &gt;= 2)", "gene" =&gt; "Assay label (HER2 Gene copy &gt; _ 4 or 5 or 6)", "other" =&gt; "Other"))</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="116" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="111">
+          <description>Declares the validation rules.</description>
+          <long-description>&lt;p&gt;The rules state that username and password are required,
+and password needs to be authenticated.&lt;/p&gt;</long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="159" package="Default">
+        <name>percInvStaining</name>
+        <full_name>percInvStaining</full_name>
+        <argument line="159">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="170" package="Default">
+        <name>stainingAntibodyOther</name>
+        <full_name>stainingAntibodyOther</full_name>
+        <argument line="170">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="176" package="Default">
+        <name>IHCLocalGuidelinesNA</name>
+        <full_name>IHCLocalGuidelinesNA</full_name>
+        <argument line="176">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="182" package="Default">
+        <name>IHCCellPos</name>
+        <full_name>IHCCellPos</full_name>
+        <argument line="182">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="188" package="Default">
+        <name>ISHKitOther</name>
+        <full_name>ISHKitOther</full_name>
+        <argument line="188">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="194" package="Default">
+        <name>ISHSingleAmplifiedOrNotGeneCopy</name>
+        <full_name>ISHSingleAmplifiedOrNotGeneCopy</full_name>
+        <argument line="194">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="200" package="Default">
+        <name>ISHSingleAmplifiedOrNotOtherSpecify</name>
+        <full_name>ISHSingleAmplifiedOrNotOtherSpecify</full_name>
+        <argument line="200">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="206" package="Default">
+        <name>acceptNA</name>
+        <full_name>acceptNA</full_name>
+        <argument line="206">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="213" package="Default">
+        <name>acceptNAAndCutOff</name>
+        <full_name>acceptNAAndCutOff</full_name>
+        <argument line="213">
+          <name>$attribute</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="220" package="Default">
+        <name>getFields</name>
+        <full_name>getFields</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="225" package="Default">
+        <name>massAssignation</name>
+        <full_name>massAssignation</full_name>
+        <argument line="225">
+          <name>$responses</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="233" package="Default">
+        <name>computeScenario</name>
+        <full_name>computeScenario</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="254" package="Default">
+        <name>attributeLabels</name>
+        <full_name>attributeLabels</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="297" package="Default">
+        <name>getMappingOldValueToNewValue</name>
+        <full_name>getMappingOldValueToNewValue</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="302" package="Default">
+        <name>getMapCompatibilityMode</name>
+        <full_name>getMapCompatibilityMode</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="310" package="Default">
+        <name>transformOldValueToNewValue</name>
+        <full_name>transformOldValueToNewValue</full_name>
+        <docblock line="307">
+          <description>fonction qui est en charge de faire la correspondance des anciennes valeurs avec les nouvelles</description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="310">
+          <name>$questionID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="310">
+          <name>$response</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="324" package="Default">
+        <name>reverseNewValueToOldValue</name>
+        <full_name>reverseNewValueToOldValue</full_name>
+        <argument line="324">
+          <name>$array</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\AphinityLocalForm.php</error>
+      <error line="5" code="50000">No DocBlock was found for \AphinityLocalForm</error>
+      <error line="7" code="50018">No DocBlock was found for property $pathologicalStage</error>
+      <error line="8" code="50018">No DocBlock was found for property $sizeInvComp</error>
+      <error line="10" code="50018">No DocBlock was found for property $IHCPerformed</error>
+      <error line="11" code="50018">No DocBlock was found for property $IHCTestDate</error>
+      <error line="12" code="50018">No DocBlock was found for property $IHCResult</error>
+      <error line="13" code="50018">No DocBlock was found for property $percInvStaining</error>
+      <error line="14" code="50018">No DocBlock was found for property $stainingAntibody</error>
+      <error line="15" code="50018">No DocBlock was found for property $stainingAntibodyOther</error>
+      <error line="16" code="50018">No DocBlock was found for property $IHCLocalGuidelines</error>
+      <error line="17" code="50018">No DocBlock was found for property $IHCLocalGuidelinesNA</error>
+      <error line="18" code="50018">No DocBlock was found for property $IHCPositivity</error>
+      <error line="19" code="50018">No DocBlock was found for property $IHCCellPos</error>
+      <error line="21" code="50018">No DocBlock was found for property $ISHDualPerformed</error>
+      <error line="22" code="50018">No DocBlock was found for property $ISHDualTestDate</error>
+      <error line="23" code="50018">No DocBlock was found for property $ISHKit</error>
+      <error line="24" code="50018">No DocBlock was found for property $ISHKitOther</error>
+      <error line="25" code="50018">No DocBlock was found for property $ISHDualResult</error>
+      <error line="26" code="50018">No DocBlock was found for property $ISHDual17RatioUnit</error>
+      <error line="27" code="50018">No DocBlock was found for property $ISHDual17RatioDecimal</error>
+      <error line="28" code="50018">No DocBlock was found for property $ISHDualGeneCopyNumber</error>
+      <error line="29" code="50018">No DocBlock was found for property $ISHDual17CopyNumber</error>
+      <error line="31" code="50018">No DocBlock was found for property $ISHSinglePerformed</error>
+      <error line="32" code="50018">No DocBlock was found for property $ISHSingleTestDate</error>
+      <error line="33" code="50018">No DocBlock was found for property $ISHSingleMethod</error>
+      <error line="34" code="50018">No DocBlock was found for property $ISHSingleKit</error>
+      <error line="35" code="50018">No DocBlock was found for property $ISHSingleKitCommercial</error>
+      <error line="36" code="50018">No DocBlock was found for property $ISHSingleResult</error>
+      <error line="37" code="50018">No DocBlock was found for property $ISHSingleGeneCopyNumber</error>
+      <error line="38" code="50018">No DocBlock was found for property $ISHSingleAmplifiedOrNot</error>
+      <error line="39" code="50018">No DocBlock was found for property $ISHSingleAmplifiedOrNotGeneCopy</error>
+      <error line="40" code="50018">No DocBlock was found for property $ISHSingleAmplifiedOrNotOtherSpecify</error>
+      <error line="42" code="50018">No DocBlock was found for property $localReceptorER</error>
+      <error line="43" code="50018">No DocBlock was found for property $localReceptorPGR</error>
+      <error line="44" code="50018">No DocBlock was found for property $localComment</error>
+      <error line="45" code="50018">No DocBlock was found for property $localPathologistSigned</error>
+      <error line="47" code="50018">No DocBlock was found for property $sampleID</error>
+      <error line="48" code="50018">No DocBlock was found for property $formID</error>
+      <error line="49" code="50018">No DocBlock was found for property $update</error>
+      <error line="50" code="50018">No DocBlock was found for property $fields</error>
+      <error line="95" code="50018">No DocBlock was found for property $oldValueToNewValue</error>
+      <error line="159" code="50010">No DocBlock was found for method percInvStaining()</error>
+      <error line="170" code="50010">No DocBlock was found for method stainingAntibodyOther()</error>
+      <error line="176" code="50010">No DocBlock was found for method IHCLocalGuidelinesNA()</error>
+      <error line="182" code="50010">No DocBlock was found for method IHCCellPos()</error>
+      <error line="188" code="50010">No DocBlock was found for method ISHKitOther()</error>
+      <error line="194" code="50010">No DocBlock was found for method ISHSingleAmplifiedOrNotGeneCopy()</error>
+      <error line="200" code="50010">No DocBlock was found for method ISHSingleAmplifiedOrNotOtherSpecify()</error>
+      <error line="206" code="50010">No DocBlock was found for method acceptNA()</error>
+      <error line="213" code="50010">No DocBlock was found for method acceptNAAndCutOff()</error>
+      <error line="220" code="50010">No DocBlock was found for method getFields()</error>
+      <error line="225" code="50010">No DocBlock was found for method massAssignation()</error>
+      <error line="233" code="50010">No DocBlock was found for method computeScenario()</error>
+      <error line="254" code="50010">No DocBlock was found for method attributeLabels()</error>
+      <error line="297" code="50010">No DocBlock was found for method getMappingOldValueToNewValue()</error>
+      <error line="302" code="50010">No DocBlock was found for method getMapCompatibilityMode()</error>
+      <error line="307" code="50015">Argument $questionID is missing from the Docblock of transformOldValueToNewValue()</error>
+      <error line="307" code="50015">Argument $response is missing from the Docblock of transformOldValueToNewValue()</error>
+      <error line="324" code="50010">No DocBlock was found for method reverseNewValueToOldValue()</error>
+    </parse_markers>
+  </file>
+  <file path="models\CentralQuery.php" hash="e9f4823f07a249620538ece3284bbeb0" package="Default">
+    <class final="false" abstract="false" namespace="global" line="4" package="Default">
+      <extends/>
+      <name>CentralQuery</name>
+      <full_name>\CentralQuery</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="7" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="12" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="18" package="Default">
+        <name>getALLHer2Form</name>
+        <full_name>getALLHer2Form</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\CentralQuery.php</error>
+      <error line="4" code="50000">No DocBlock was found for \CentralQuery</error>
+      <error line="7" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="12" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="18" code="50010">No DocBlock was found for method getALLHer2Form()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\Blood.php" hash="d25baffa80b9a61b93f3fed1a566048e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="10" package="Default">
+      <extends>\Samples</extends>
+      <name>Blood</name>
+      <full_name>\Blood</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 14/01/13
+Time: 12:05
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="11" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="11">
+          <name>$values</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="11">
+          <name>$materialTypeProperties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="15" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="19" package="Default">
+        <name>updateSampleInformation</name>
+        <full_name>updateSampleInformation</full_name>
+        <argument line="19">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>saveSampleInformation</name>
+        <full_name>saveSampleInformation</full_name>
+        <argument line="24">
+          <name>$prelevementID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="24">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\Blood.php</error>
+      <error line="11" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="15" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="19" code="50010">No DocBlock was found for method updateSampleInformation()</error>
+      <error line="24" code="50010">No DocBlock was found for method saveSampleInformation()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\FactorySample.php" hash="287e3cfca332ac14d04640a0b4c17efc" package="Default">
+    <class final="false" abstract="false" namespace="global" line="10" package="Default">
+      <extends/>
+      <name>FactorySample</name>
+      <full_name>\FactorySample</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 14/01/13
+Time: 12:37
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="12" namespace="global" package="Default">
+        <name>$_studyID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="12" namespace="global" package="Default">
+        <name>$_values</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="private" line="13" namespace="global" package="Default">
+        <name>$_materialTypeProperties</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="15" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="15">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="15">
+          <name>$values</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="29" package="Default">
+        <name>getMaterialTypeProperties</name>
+        <full_name>getMaterialTypeProperties</full_name>
+        <docblock line="26">
+          <description></description>
+          <long-description></long-description>
+          <tag line="26" name="return" description="of activeRecord" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="37" package="Default">
+        <name>createSample</name>
+        <full_name>createSample</full_name>
+        <docblock line="34">
+          <description></description>
+          <long-description></long-description>
+          <tag line="34" name="return" description="" type="\Blood|\Serum|\Tissue">
+            <type by_reference="false">\Blood</type>
+            <type by_reference="false">\Serum</type>
+            <type by_reference="false">\Tissue</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="43" package="Default">
+        <name>sampleAphinity</name>
+        <full_name>sampleAphinity</full_name>
+        <argument line="43">
+          <name>$sampleTypeID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="43">
+          <name>$materialTypeProperties</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\FactorySample.php</error>
+      <error line="12" code="50018">No DocBlock was found for property $_studyID</error>
+      <error line="12" code="50018">No DocBlock was found for property $_values</error>
+      <error line="13" code="50018">No DocBlock was found for property $_materialTypeProperties</error>
+      <error line="15" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="26" code="50012">No short description for method getMaterialTypeProperties()</error>
+      <error line="34" code="50012">No short description for method createSample()</error>
+      <error line="43" code="50010">No DocBlock was found for method sampleAphinity()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\MyKitNumber.class.php" hash="d0959b28b2b7c3b0f42fa148d73f006e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\Biotracking</extends>
+      <name>MyKitNumber</name>
+      <full_name>\MyKitNumber</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="5" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="10" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="15" package="Default">
+        <name>findKitNumber</name>
+        <full_name>findKitNumber</full_name>
+        <argument line="15">
+          <name>$patientID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="Default">
+        <name>findAllKitNumberOfSite</name>
+        <full_name>findAllKitNumberOfSite</full_name>
+        <argument line="34">
+          <name>$arrCentreID</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Default">
+        <name>findAllKitNumberOfUser</name>
+        <full_name>findAllKitNumberOfUser</full_name>
+        <argument line="51">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\MyKitNumber.class.php</error>
+      <error line="3" code="50000">No DocBlock was found for \MyKitNumber</error>
+      <error line="5" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="10" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="15" code="50010">No DocBlock was found for method findKitNumber()</error>
+      <error line="34" code="50010">No DocBlock was found for method findAllKitNumberOfSite()</error>
+      <error line="51" code="50010">No DocBlock was found for method findAllKitNumberOfUser()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\MyPatient.class.php" hash="1b05caf60c84ced7c6f9eab21c811b19" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\Biotracking</extends>
+      <name>MyPatient</name>
+      <full_name>\MyPatient</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="5" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="10" package="Default">
+        <name>getAllPatient</name>
+        <full_name>getAllPatient</full_name>
+        <argument line="10">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="10">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>getVisit</name>
+        <full_name>getVisit</full_name>
+        <argument line="26">
+          <name>$patientID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="54" package="Default">
+        <name>getSampleByVisit</name>
+        <full_name>getSampleByVisit</full_name>
+        <argument line="54">
+          <name>$patientID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="54">
+          <name>$visitID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\MyPatient.class.php</error>
+      <error line="3" code="50000">No DocBlock was found for \MyPatient</error>
+      <error line="5" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="10" code="50010">No DocBlock was found for method getAllPatient()</error>
+      <error line="26" code="50010">No DocBlock was found for method getVisit()</error>
+      <error line="54" code="50010">No DocBlock was found for method getSampleByVisit()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\MySample.class.php" hash="899b81c086117b5b71e6494280a9afd7" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends/>
+      <name>MySample</name>
+      <full_name>\MySample</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="5" package="Default">
+        <name>getMySamples</name>
+        <full_name>getMySamples</full_name>
+        <argument line="5">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="5">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="5">
+          <name>$additionalCondition</name>
+          <default>''</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="39" package="Default">
+        <name>getMyVisits</name>
+        <full_name>getMyVisits</full_name>
+        <argument line="39">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="39">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="55" package="Default">
+        <name>getSampleCompletedFormTissue</name>
+        <full_name>getSampleCompletedFormTissue</full_name>
+        <argument line="55">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="55">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="80" package="Default">
+        <name>getSampleCompletedFormOther</name>
+        <full_name>getSampleCompletedFormOther</full_name>
+        <argument line="80">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="80">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="80">
+          <name>$profile</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\MySample.class.php</error>
+      <error line="3" code="50000">No DocBlock was found for \MySample</error>
+      <error line="5" code="50010">No DocBlock was found for method getMySamples()</error>
+      <error line="39" code="50010">No DocBlock was found for method getMyVisits()</error>
+      <error line="55" code="50010">No DocBlock was found for method getSampleCompletedFormTissue()</error>
+      <error line="80" code="50010">No DocBlock was found for method getSampleCompletedFormOther()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\MySampleNumber.class.php" hash="148e6288cceb57cd4493939c159ae170" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\Biotracking</extends>
+      <name>MySampleNumber</name>
+      <full_name>\MySampleNumber</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="6" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="11" package="Default">
+        <name>getAllSampleNumber</name>
+        <full_name>getAllSampleNumber</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\MySampleNumber.class.php</error>
+      <error line="3" code="50000">No DocBlock was found for \MySampleNumber</error>
+      <error line="6" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="11" code="50010">No DocBlock was found for method getAllSampleNumber()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\Serum.php" hash="3982700b03fe5c3cccd1a698dff79d49" package="Default">
+    <class final="false" abstract="false" namespace="global" line="10" package="Default">
+      <extends>\Samples</extends>
+      <name>Serum</name>
+      <full_name>\Serum</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 14/01/13
+Time: 12:05
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="12" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="12">
+          <name>$values</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="12">
+          <name>$materialTypeProperties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="20" package="Default">
+        <name>saveSampleInformation</name>
+        <full_name>saveSampleInformation</full_name>
+        <argument line="20">
+          <name>$prelevementID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="20">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>updateSampleInformation</name>
+        <full_name>updateSampleInformation</full_name>
+        <argument line="26">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="32" package="Default">
+        <name>insertChildren</name>
+        <full_name>insertChildren</full_name>
+        <argument line="32">
+          <name>$prelevementID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="32">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\Serum.php</error>
+      <error line="12" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="16" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="20" code="50010">No DocBlock was found for method saveSampleInformation()</error>
+      <error line="26" code="50010">No DocBlock was found for method updateSampleInformation()</error>
+      <error line="32" code="50010">No DocBlock was found for method insertChildren()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\Tissue.php" hash="91981e7401cfe06ef89a98aff24eac14" package="Default">
+    <class final="false" abstract="false" namespace="global" line="10" package="Default">
+      <extends>\Samples</extends>
+      <name>Tissue</name>
+      <full_name>\Tissue</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 14/01/13
+Time: 12:03
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="12" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="12">
+          <name>$values</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="12">
+          <name>$materialTypeProperties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="20" package="Default">
+        <name>createSampleInformation</name>
+        <full_name>createSampleInformation</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="25" package="Default">
+        <name>updateSampleInformation</name>
+        <full_name>updateSampleInformation</full_name>
+        <argument line="25">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="31" package="Default">
+        <name>updateReturnAddress</name>
+        <full_name>updateReturnAddress</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="45" package="Default">
+        <name>saveAddressAndReturnAddress</name>
+        <full_name>saveAddressAndReturnAddress</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="53" package="Default">
+        <name>saveReturnAddress</name>
+        <full_name>saveReturnAddress</full_name>
+        <argument line="53">
+          <name>$materialID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="53">
+          <name>$addressID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\Tissue.php</error>
+      <error line="12" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="16" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="20" code="50010">No DocBlock was found for method createSampleInformation()</error>
+      <error line="25" code="50010">No DocBlock was found for method updateSampleInformation()</error>
+      <error line="31" code="50010">No DocBlock was found for method updateReturnAddress()</error>
+      <error line="45" code="50010">No DocBlock was found for method saveAddressAndReturnAddress()</error>
+      <error line="53" code="50010">No DocBlock was found for method saveReturnAddress()</error>
+    </parse_markers>
+  </file>
+  <file path="models\custom\TMA.php" hash="67f4bd0930582b981e7a7998a92ed23b" package="Default">
+    <class final="false" abstract="false" namespace="global" line="10" package="Default">
+      <extends>\Samples</extends>
+      <name>TMA</name>
+      <full_name>\TMA</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 14/01/13
+Time: 12:06
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="12" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="12">
+          <name>$values</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="12">
+          <name>$materialTypeProperties</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>__destruct</name>
+        <full_name>__destruct</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="20" package="Default">
+        <name>saveSampleInformation</name>
+        <full_name>saveSampleInformation</full_name>
+        <argument line="20">
+          <name>$prelevementID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="20">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="25" package="Default">
+        <name>create</name>
+        <full_name>create</full_name>
+        <argument line="25">
+          <name>$prelevementID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="25">
+          <name>$parentID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="25">
+          <name>$materialTypeID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="45" package="Default">
+        <name>updateSampleInformation</name>
+        <full_name>updateSampleInformation</full_name>
+        <argument line="45">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <markers>
+      <todo line="47">Implement updateSampleInformation() method.</todo>
+    </markers>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\custom\TMA.php</error>
+      <error line="12" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="16" code="50010">No DocBlock was found for method __destruct()</error>
+      <error line="20" code="50010">No DocBlock was found for method saveSampleInformation()</error>
+      <error line="25" code="50010">No DocBlock was found for method create()</error>
+      <error line="45" code="50010">No DocBlock was found for method updateSampleInformation()</error>
+    </parse_markers>
+  </file>
+  <file path="models\form\aphinity\NewSampleForm.php" hash="d88ca4fc1f6fae127bacda6611dab2ef" package="Default">
+    <class final="false" abstract="false" namespace="global" line="5" package="Default">
+      <extends>\CFormModel</extends>
+      <name>NewSampleForm</name>
+      <full_name>\NewSampleForm</full_name>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$birthdate_dd_mm_yyyy</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="8" namespace="global" package="Default">
+        <name>$KIT_NUMBER_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="9" namespace="global" package="Default">
+        <name>$PATIENT_ID</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="11">
+          <description>Declares the validation rules.</description>
+          <long-description>&lt;p&gt;The rules state that username and password are required,
+and password needs to be authenticated.&lt;/p&gt;</long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="23" package="Default">
+        <name>attributeLabels</name>
+        <full_name>attributeLabels</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="30" package="Default">
+        <name>saveRequiredValues</name>
+        <full_name>saveRequiredValues</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="39" package="Default">
+        <name>insertBirthDate</name>
+        <full_name>insertBirthDate</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="44" package="Default">
+        <name>insertKitNumber</name>
+        <full_name>insertKitNumber</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\form\aphinity\NewSampleForm.php</error>
+      <error line="5" code="50000">No DocBlock was found for \NewSampleForm</error>
+      <error line="7" code="50018">No DocBlock was found for property $birthdate_dd_mm_yyyy</error>
+      <error line="8" code="50018">No DocBlock was found for property $KIT_NUMBER_ID</error>
+      <error line="9" code="50018">No DocBlock was found for property $PATIENT_ID</error>
+      <error line="23" code="50010">No DocBlock was found for method attributeLabels()</error>
+      <error line="30" code="50010">No DocBlock was found for method saveRequiredValues()</error>
+      <error line="39" code="50010">No DocBlock was found for method insertBirthDate()</error>
+      <error line="44" code="50010">No DocBlock was found for method insertKitNumber()</error>
+    </parse_markers>
+  </file>
+  <file path="models\form\aphinity\SampleDetailsForm.php" hash="24b91a0f95652cabb6389c51449cbc3f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="5" package="Default">
+      <extends>\BrEASTSampleDetailsForm</extends>
+      <name>SampleDetailsForm</name>
+      <full_name>\SampleDetailsForm</full_name>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$PATIENT_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="8" namespace="global" package="Default">
+        <name>$MATERIAL_TYPE_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="9" namespace="global" package="Default">
+        <name>$VISIT_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="10" namespace="global" package="Default">
+        <name>$patientNumber</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="11" namespace="global" package="Default">
+        <name>$birthdate_dd_mmm_yyyy</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="12" namespace="global" package="Default">
+        <name>$birthdate_dd_mm_yyyy</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="13" namespace="global" package="Default">
+        <name>$center</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="14" namespace="global" package="Default">
+        <name>$CONDITIONING</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$LATERALITY</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="16" namespace="global" package="Default">
+        <name>$SAMPLE_NUMBER</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="17" namespace="global" package="Default">
+        <name>$KIT_NUMBER_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="18" namespace="global" package="Default">
+        <name>$blood_technical</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="19" namespace="global" package="Default">
+        <name>$endTaxanes</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="20" namespace="global" package="Default">
+        <name>$MATERIAL_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="22" namespace="global" package="Default">
+        <name>$LOCAL_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="23" namespace="global" package="Default">
+        <name>$CRYOVIALS_NUMBER</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="24" namespace="global" package="Default">
+        <name>$TEMPERATURE</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="25" namespace="global" package="Default">
+        <name>$collection_date_dd_mmm_yyyy</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="26" namespace="global" package="Default">
+        <name>$COLLECTION_DATE_DD_MM_YYYY</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="27" namespace="global" package="Default">
+        <name>$FIXATIVES</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="28" namespace="global" package="Default">
+        <name>$OTHER_FREEZING_PROCEDURE</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="29" namespace="global" package="Default">
+        <name>$MATERIAL_STATE</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="30" namespace="global" package="Default">
+        <name>$COMMENT</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="31" namespace="global" package="Default">
+        <name>$WITHDRAWAL_TIME</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="33" namespace="global" package="Default">
+        <name>$ADDRESS_STREET</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="34" namespace="global" package="Default">
+        <name>$ADDRESS_CITY</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="35" namespace="global" package="Default">
+        <name>$ADDRESS_STATE</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="36" namespace="global" package="Default">
+        <name>$ADDRESS_POSTCODE</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="37" namespace="global" package="Default">
+        <name>$COUNTRY_ID</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="40" package="Default">
+        <name>beforeValidate</name>
+        <full_name>beforeValidate</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="59" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="54">
+          <description>Declares the validation rules.</description>
+          <long-description>&lt;p&gt;The rules state that username and password are required,
+and password needs to be authenticated.&lt;/p&gt;</long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="72" package="Default">
+        <name>attributeLabels</name>
+        <full_name>attributeLabels</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="99" package="Default">
+        <name>setReturnAddress</name>
+        <full_name>setReturnAddress</full_name>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\form\aphinity\SampleDetailsForm.php</error>
+      <error line="5" code="50000">No DocBlock was found for \SampleDetailsForm</error>
+      <error line="7" code="50018">No DocBlock was found for property $PATIENT_ID</error>
+      <error line="8" code="50018">No DocBlock was found for property $MATERIAL_TYPE_ID</error>
+      <error line="9" code="50018">No DocBlock was found for property $VISIT_ID</error>
+      <error line="10" code="50018">No DocBlock was found for property $patientNumber</error>
+      <error line="11" code="50018">No DocBlock was found for property $birthdate_dd_mmm_yyyy</error>
+      <error line="12" code="50018">No DocBlock was found for property $birthdate_dd_mm_yyyy</error>
+      <error line="13" code="50018">No DocBlock was found for property $center</error>
+      <error line="14" code="50018">No DocBlock was found for property $CONDITIONING</error>
+      <error line="15" code="50018">No DocBlock was found for property $LATERALITY</error>
+      <error line="16" code="50018">No DocBlock was found for property $SAMPLE_NUMBER</error>
+      <error line="17" code="50018">No DocBlock was found for property $KIT_NUMBER_ID</error>
+      <error line="18" code="50018">No DocBlock was found for property $blood_technical</error>
+      <error line="19" code="50018">No DocBlock was found for property $endTaxanes</error>
+      <error line="20" code="50018">No DocBlock was found for property $MATERIAL_ID</error>
+      <error line="22" code="50018">No DocBlock was found for property $LOCAL_ID</error>
+      <error line="23" code="50018">No DocBlock was found for property $CRYOVIALS_NUMBER</error>
+      <error line="24" code="50018">No DocBlock was found for property $TEMPERATURE</error>
+      <error line="25" code="50018">No DocBlock was found for property $collection_date_dd_mmm_yyyy</error>
+      <error line="26" code="50018">No DocBlock was found for property $COLLECTION_DATE_DD_MM_YYYY</error>
+      <error line="27" code="50018">No DocBlock was found for property $FIXATIVES</error>
+      <error line="28" code="50018">No DocBlock was found for property $OTHER_FREEZING_PROCEDURE</error>
+      <error line="29" code="50018">No DocBlock was found for property $MATERIAL_STATE</error>
+      <error line="30" code="50018">No DocBlock was found for property $COMMENT</error>
+      <error line="31" code="50018">No DocBlock was found for property $WITHDRAWAL_TIME</error>
+      <error line="33" code="50018">No DocBlock was found for property $ADDRESS_STREET</error>
+      <error line="34" code="50018">No DocBlock was found for property $ADDRESS_CITY</error>
+      <error line="35" code="50018">No DocBlock was found for property $ADDRESS_STATE</error>
+      <error line="36" code="50018">No DocBlock was found for property $ADDRESS_POSTCODE</error>
+      <error line="37" code="50018">No DocBlock was found for property $COUNTRY_ID</error>
+      <error line="40" code="50010">No DocBlock was found for method beforeValidate()</error>
+      <error line="72" code="50010">No DocBlock was found for method attributeLabels()</error>
+      <error line="99" code="50010">No DocBlock was found for method setReturnAddress()</error>
+    </parse_markers>
+  </file>
+  <file path="models\KitNumber.php" hash="c4757bfc2156783bf0cd115ee3122948" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>KitNumber</name>
+      <full_name>\KitNumber</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\KitNumber.php</error>
+      <error line="3" code="50000">No DocBlock was found for \KitNumber</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\MaterialDetails.php" hash="449faece2c412b3623655d8c795536b7" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>MaterialDetails</name>
+      <full_name>\MaterialDetails</full_name>
+      <property final="false" static="false" visibility="public" line="5" namespace="global" package="Default">
+        <name>$MATERIAL_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="6" namespace="global" package="Default">
+        <name>$PROPERTY_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$VALUE</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="14" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="9">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="9" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="9" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="14">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="19" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="27" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="24">
+          <description></description>
+          <long-description></long-description>
+          <tag line="24" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="35" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="32">
+          <description></description>
+          <long-description></long-description>
+          <tag line="32" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="47" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="44">
+          <description></description>
+          <long-description></long-description>
+          <tag line="44" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\MaterialDetails.php</error>
+      <error line="3" code="50000">No DocBlock was found for \MaterialDetails</error>
+      <error line="5" code="50018">No DocBlock was found for property $MATERIAL_ID</error>
+      <error line="6" code="50018">No DocBlock was found for property $PROPERTY_ID</error>
+      <error line="7" code="50018">No DocBlock was found for property $VALUE</error>
+      <error line="19" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="24" code="50012">No short description for method tableName()</error>
+      <error line="32" code="50012">No short description for method rules()</error>
+      <error line="44" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\MaterialLocation.php" hash="258d176ad72eb889744df4df1a41b603" package="Default">
+    <class final="false" abstract="false" namespace="global" line="12" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>MaterialLocation</name>
+      <full_name>\MaterialLocation</full_name>
+      <docblock line="3">
+        <description>This is the model class for table "PARCEL_DETAILS".</description>
+        <long-description>&lt;p&gt;The followings are the available columns in table 'PARCEL_DETAILS':&lt;/p&gt;</long-description>
+        <tag line="3" name="property" description="" type="integer" variable="$MATERIAL_ID">
+          <type by_reference="false">integer</type>
+        </tag>
+        <tag line="3" name="property" description="" type="integer" variable="$LOCATION_ID">
+          <type by_reference="false">integer</type>
+        </tag>
+        <tag line="3" name="property" description="" type="\date" variable="$TIMESTAMP">
+          <type by_reference="false">\date</type>
+        </tag>
+        <tag line="3" name="property" description="" type="integer" variable="$LOC_TYPE_ID">
+          <type by_reference="false">integer</type>
+        </tag>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="19" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="14">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="14" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="14" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="19">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="40" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="37">
+          <description></description>
+          <long-description></long-description>
+          <tag line="37" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="52" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="49">
+          <description></description>
+          <long-description></long-description>
+          <tag line="49" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\MaterialLocation.php</error>
+      <error line="24" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="29" code="50012">No short description for method tableName()</error>
+      <error line="37" code="50012">No short description for method rules()</error>
+      <error line="49" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\MaterialNotes.php" hash="2a7602688081aa63b55915c5045cb40d" package="Default">
+    <class final="false" abstract="false" namespace="global" line="10" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>MaterialNotes</name>
+      <full_name>\MaterialNotes</full_name>
+      <docblock line="2">
+        <description>Created by JetBrains PhpStorm.</description>
+        <long-description>&lt;p&gt;User: trann
+Date: 14/01/13
+Time: 16:21
+To change this template use File | Settings | File Templates.&lt;/p&gt;</long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="13" namespace="global" package="Default">
+        <name>$MATERIAL_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="14" namespace="global" package="Default">
+        <name>$MATERIAL_NOTE</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$DATE_ENTERED</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="16" namespace="global" package="Default">
+        <name>$USER_ID</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="23" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="18">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="18" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="18" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="23">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="28" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="36" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+          <tag line="33" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="56" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="53">
+          <description></description>
+          <long-description></long-description>
+          <tag line="53" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\MaterialNotes.php</error>
+      <error line="13" code="50018">No DocBlock was found for property $MATERIAL_ID</error>
+      <error line="14" code="50018">No DocBlock was found for property $MATERIAL_NOTE</error>
+      <error line="15" code="50018">No DocBlock was found for property $DATE_ENTERED</error>
+      <error line="16" code="50018">No DocBlock was found for property $USER_ID</error>
+      <error line="28" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="33" code="50012">No short description for method tableName()</error>
+      <error line="41" code="50012">No short description for method rules()</error>
+      <error line="53" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\Materials.php" hash="fb7ab877789f87fe96fd7a687bb13162" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>Materials</name>
+      <full_name>\Materials</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\Materials.php</error>
+      <error line="3" code="50000">No DocBlock was found for \Materials</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\MaterialTypes.php" hash="876efa14b57c0f7cd6724ab1531d81ac" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>MaterialTypes</name>
+      <full_name>\MaterialTypes</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\MaterialTypes.php</error>
+      <error line="3" code="50000">No DocBlock was found for \MaterialTypes</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\Patients.php" hash="b6525c78b3c46d4402f63e0e18ecfc2c" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>Patients</name>
+      <full_name>\Patients</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="58" package="Default">
+        <name>updateBirthDate</name>
+        <full_name>updateBirthDate</full_name>
+        <docblock line="52">
+          <description></description>
+          <long-description></long-description>
+          <tag line="52" name="param" description="" type="\" variable="$patientID"/>
+          <tag line="52" name="param" description="" type="\" variable="$birthDate"/>
+          <tag line="52" name="param" description="(optional)" type="string" variable="$dateFormat">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="52" name="throws" description="" type="\Exception">
+            <type by_reference="false">\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="58">
+          <name>$patientID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="58">
+          <name>$birthDate</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="58">
+          <name>$dateFormat</name>
+          <default>'DD/MM/YYYY'</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\Patients.php</error>
+      <error line="3" code="50000">No DocBlock was found for \Patients</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+      <error line="52" code="50012">No short description for method updateBirthDate()</error>
+    </parse_markers>
+  </file>
+  <file path="models\Prelevement.php" hash="44cb56bc1804431e560b03a6ea2b3585" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>Prelevement</name>
+      <full_name>\Prelevement</full_name>
+      <property final="false" static="false" visibility="public" line="5" namespace="global" package="Default">
+        <name>$VISIT_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="6" namespace="global" package="Default">
+        <name>$PATIENT_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="7" namespace="global" package="Default">
+        <name>$COLLECTION_DATE</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="8" namespace="global" package="Default">
+        <name>$TIMESTAMP</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="9" namespace="global" package="Default">
+        <name>$STUDY_ID</name>
+        <default></default>
+      </property>
+      <property final="false" static="false" visibility="public" line="10" namespace="global" package="Default">
+        <name>$USER_ENTERED</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="17" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="12">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="12" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="12" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="17">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="22" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="30" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="27">
+          <description></description>
+          <long-description></long-description>
+          <tag line="27" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="35">
+          <description></description>
+          <long-description></long-description>
+          <tag line="35" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="50" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="47">
+          <description></description>
+          <long-description></long-description>
+          <tag line="47" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\Prelevement.php</error>
+      <error line="3" code="50000">No DocBlock was found for \Prelevement</error>
+      <error line="5" code="50018">No DocBlock was found for property $VISIT_ID</error>
+      <error line="6" code="50018">No DocBlock was found for property $PATIENT_ID</error>
+      <error line="7" code="50018">No DocBlock was found for property $COLLECTION_DATE</error>
+      <error line="8" code="50018">No DocBlock was found for property $TIMESTAMP</error>
+      <error line="9" code="50018">No DocBlock was found for property $STUDY_ID</error>
+      <error line="10" code="50018">No DocBlock was found for property $USER_ENTERED</error>
+      <error line="22" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="27" code="50012">No short description for method tableName()</error>
+      <error line="35" code="50012">No short description for method rules()</error>
+      <error line="47" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\Responses.php" hash="99f5c1dcc0084e9f28a231085e4c98b1" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>Responses</name>
+      <full_name>\Responses</full_name>
+      <property final="false" static="false" visibility="private" line="5" namespace="global" package="Default">
+        <name>$compatibilityMode</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="18" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="13">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="13" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="13" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="18">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="23" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="31" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="28">
+          <description></description>
+          <long-description></long-description>
+          <tag line="28" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="39" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="36">
+          <description></description>
+          <long-description></long-description>
+          <tag line="36" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="51" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="48">
+          <description></description>
+          <long-description></long-description>
+          <tag line="48" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="59" package="Default">
+        <name>insertResults</name>
+        <full_name>insertResults</full_name>
+        <argument line="59">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="59">
+          <name>$fields</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="59">
+          <name>$attributes</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="86" package="Default">
+        <name>updateResults</name>
+        <full_name>updateResults</full_name>
+        <argument line="86">
+          <name>$userID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="86">
+          <name>$fields</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="86">
+          <name>$attributes</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <argument line="86">
+          <name>$compatibilityMode</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="110" package="Default">
+        <name>transformNewValueToOldValue</name>
+        <full_name>transformNewValueToOldValue</full_name>
+        <argument line="110">
+          <name>$questionID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="110">
+          <name>$response</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="126" package="Default">
+        <name>convertToNumeric</name>
+        <full_name>convertToNumeric</full_name>
+        <argument line="126">
+          <name>$value</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\Responses.php</error>
+      <error line="3" code="50000">No DocBlock was found for \Responses</error>
+      <error line="5" code="50018">No DocBlock was found for property $compatibilityMode</error>
+      <error line="23" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="28" code="50012">No short description for method tableName()</error>
+      <error line="36" code="50012">No short description for method rules()</error>
+      <error line="48" code="50012">No short description for method relations()</error>
+      <error line="59" code="50010">No DocBlock was found for method insertResults()</error>
+      <error line="86" code="50010">No DocBlock was found for method updateResults()</error>
+      <error line="110" code="50010">No DocBlock was found for method transformNewValueToOldValue()</error>
+      <error line="126" code="50010">No DocBlock was found for method convertToNumeric()</error>
+    </parse_markers>
+  </file>
+  <file path="models\UserPrivilegeTest.php" hash="c80c477ffdd529624d9e2c7169c0250c" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends>\MyLabDev2ActiveRecord</extends>
+      <name>ParcelSamples</name>
+      <full_name>\ParcelSamples</full_name>
+      <docblock line="3">
+        <description>This is the model class for table "PARCEL_SAMPLES".</description>
+        <long-description></long-description>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="13" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="8">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="8" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="8" name="return" description="the static model class" type="\ParceLSamples">
+            <type by_reference="false">\ParceLSamples</type>
+          </tag>
+        </docblock>
+        <argument line="13">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="18" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="26" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="23">
+          <description></description>
+          <long-description></long-description>
+          <tag line="23" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="31">
+          <description></description>
+          <long-description></long-description>
+          <tag line="31" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="46" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="43">
+          <description></description>
+          <long-description></long-description>
+          <tag line="43" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="57" package="Default">
+        <name>attributeLabels</name>
+        <full_name>attributeLabels</full_name>
+        <docblock line="54">
+          <description></description>
+          <long-description></long-description>
+          <tag line="54" name="return" description="customized attribute labels (name=&gt;label)" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="68" package="Default">
+        <name>search</name>
+        <full_name>search</full_name>
+        <docblock line="64">
+          <description>Retrieves a list of models based on the current search/filter conditions.</description>
+          <long-description></long-description>
+          <tag line="64" name="return" description="the data provider that can return the models based on the search/filter conditions." type="\CActiveDataProvider">
+            <type by_reference="false">\CActiveDataProvider</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\UserPrivilegeTest.php</error>
+      <error line="18" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="23" code="50012">No short description for method tableName()</error>
+      <error line="31" code="50012">No short description for method rules()</error>
+      <error line="43" code="50012">No short description for method relations()</error>
+      <error line="54" code="50012">No short description for method attributeLabels()</error>
+    </parse_markers>
+  </file>
+  <file path="models\VCentresAddress.php" hash="8e4518e7864540e44e1ef03abcc2eb63" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>VCentresAddress</name>
+      <full_name>\VCentresAddress</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\VCentresAddress.php</error>
+      <error line="3" code="50000">No DocBlock was found for \VCentresAddress</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\VCountryFiltered.php" hash="afbcd8172808ba630d19bec901d3aa0b" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>VCountryFiltered</name>
+      <full_name>\VCountryFiltered</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="52" package="Default">
+        <name>getCountries</name>
+        <full_name>getCountries</full_name>
+        <argument line="52">
+          <name>$study</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\VCountryFiltered.php</error>
+      <error line="3" code="50000">No DocBlock was found for \VCountryFiltered</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+      <error line="52" code="50010">No DocBlock was found for method getCountries()</error>
+    </parse_markers>
+  </file>
+  <file path="models\Visits.php" hash="04bf4e3d8f610a18026aa5d5b5141ebc" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>Visits</name>
+      <full_name>\Visits</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\Visits.php</error>
+      <error line="3" code="50000">No DocBlock was found for \Visits</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\VMaterialTypeProperties.php" hash="8416cede9ec94a483a2068566b23ee10" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>VMaterialTypeProperties</name>
+      <full_name>\VMaterialTypeProperties</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="58" package="Default">
+        <name>getValues</name>
+        <full_name>getValues</full_name>
+        <docblock line="52">
+          <description></description>
+          <long-description></long-description>
+          <tag line="52" name="param" description="" type="\" variable="$studyID"/>
+          <tag line="52" name="param" description="return array()&#13;&#10;Le tableau retourné contient toutes les valeurs autorisées pour la propriété donnée en paramètre" type="\" variable="$propertyName"/>
+        </docblock>
+        <argument line="58">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="58">
+          <name>$propertyName</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="69" package="Default">
+        <name>getPropertiesOfSampleType</name>
+        <full_name>getPropertiesOfSampleType</full_name>
+        <argument line="69">
+          <name>$materialTypeID</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="69">
+          <name>$studyID</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\VMaterialTypeProperties.php</error>
+      <error line="3" code="50000">No DocBlock was found for \VMaterialTypeProperties</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+      <error line="52" code="50012">No short description for method getValues()</error>
+      <error line="69" code="50010">No DocBlock was found for method getPropertiesOfSampleType()</error>
+    </parse_markers>
+  </file>
+  <file path="models\VMaterialVisits.php" hash="cc012f30a5458bba8332733856725a20" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>VMaterialVisits</name>
+      <full_name>\VMaterialVisits</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\VMaterialVisits.php</error>
+      <error line="3" code="50000">No DocBlock was found for \VMaterialVisits</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="models\VPatients.php" hash="a555ba487f994f20575d108ea776b5aa" package="Default">
+    <class final="false" abstract="false" namespace="global" line="3" package="Default">
+      <extends>\MyBiotrackingActiveRecord</extends>
+      <name>VPatients</name>
+      <full_name>\VPatients</full_name>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="11" package="Default">
+        <name>model</name>
+        <full_name>model</full_name>
+        <docblock line="6">
+          <description>Returns the static model of the specified AR class.</description>
+          <long-description></long-description>
+          <tag line="6" name="param" description="active record class name." type="string" variable="$className">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="6" name="return" description="the static model class" type="\ParcelDetails">
+            <type by_reference="false">\ParcelDetails</type>
+          </tag>
+        </docblock>
+        <argument line="11">
+          <name>$className</name>
+          <default>__CLASS__</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="16" package="Default">
+        <name>getDbConnection</name>
+        <full_name>getDbConnection</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>tableName</name>
+        <full_name>tableName</full_name>
+        <docblock line="21">
+          <description></description>
+          <long-description></long-description>
+          <tag line="21" name="return" description="the associated database table name" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>rules</name>
+        <full_name>rules</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="validation rules for model attributes." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="44" package="Default">
+        <name>relations</name>
+        <full_name>relations</full_name>
+        <docblock line="41">
+          <description></description>
+          <long-description></long-description>
+          <tag line="41" name="return" description="relational rules." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file models\VPatients.php</error>
+      <error line="3" code="50000">No DocBlock was found for \VPatients</error>
+      <error line="16" code="50010">No DocBlock was found for method getDbConnection()</error>
+      <error line="21" code="50012">No short description for method tableName()</error>
+      <error line="29" code="50012">No short description for method rules()</error>
+      <error line="41" code="50012">No short description for method relations()</error>
+    </parse_markers>
+  </file>
+  <file path="views\biosample\aphinity\newSampleView.php" hash="5e406d905cadec42e859d5c10fb00639" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\biosample\aphinity\newSampleView.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\biosample\aphinity\sampleDetailsView.php" hash="dac308c3772ccca9795719bed41078db" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\biosample\aphinity\sampleDetailsView.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\CentralLab\ReturnSample.php" hash="259961140c9d5a01f6f1ddc8ff31f740" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\CentralLab\ReturnSample.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\CentralLab\Success.php" hash="db8386db405fd0a9b2639a1f89696f2c" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\CentralLab\Success.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\CentralLab\testdatatable.php" hash="fb340f8fa8cd0729248ae759b85098f9" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\CentralLab\testdatatable.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\CentralLab\VentanaForm.php" hash="57b231e5127e13dfe2b58e103897d3a5" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\CentralLab\VentanaForm.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\CentralLab\_ReturnSample.php" hash="c7903af24aeecab61ae1c3e302b8252f" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\CentralLab\_ReturnSample.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\default\index.php" hash="0bca6f03e9441a3f375b65212ab42448" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\default\index.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\her2form\AphinityLocalFormView.php" hash="2258d9103ca1e7b92ff3608179c5ce0f" package="Default">
+    <function namespace="global" line="26" package="Default">
+      <name>returnNAIfEmpty</name>
+      <full_name>\returnNAIfEmpty</full_name>
+      <argument line="26">
+        <name>$value</name>
+        <default></default>
+        <type/>
+      </argument>
+    </function>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\her2form\AphinityLocalFormView.php</error>
+      <error line="26" code="50009">No DocBlock was found for function \returnNAIfEmpty()</error>
+    </parse_markers>
+  </file>
+  <file path="views\her2form\contactSite.php" hash="f1980991a1d28632fd745692d503afdb" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\her2form\contactSite.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\layouts\biotrackingLayout.php" hash="c299294d852f72b807f9076df1f911ca" package="Default">
+    <include line="3" type="Require Once" package="Default">
+      <name>UserInterface.php</name>
+    </include>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\layouts\biotrackingLayout.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\layouts\centralLabFormLayout.php" hash="8603da86a23f226bbbfeb475c4090a03" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\layouts\centralLabFormLayout.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\layouts\main.php" hash="d41d8cd98f00b204e9800998ecf8427e" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\layouts\main.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\main\contactus.php" hash="4a91787b0973b771bf898957c92388a0" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\main\contactus.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\main\faq.php" hash="85d9e829cb6c7fad1905c30e0d06bc7a" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\main\faq.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\main\index.php" hash="4ea3679bb2bd062b867a8f4a1b64a966" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\main\index.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\main\mySamples.php" hash="b3f9fefddb781b8938284bc182a86393" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\main\mySamples.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\main\sampleCompletedForm.php" hash="da754a3e7e90ea58ff543a075cf9a37a" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\main\sampleCompletedForm.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\main\sampleCompletedFormOther.php" hash="6dbbe7b6ee26b06c90aae9b9ccc102a4" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\main\sampleCompletedFormOther.php</error>
+    </parse_markers>
+  </file>
+  <file path="views\main\sampleCompletedFormTissue.php" hash="fa670a707002c2d3047a16bf522c6dfd" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file views\main\sampleCompletedFormTissue.php</error>
+    </parse_markers>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <namespace name="global" full_name="global"/>
+  <marker count="1">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>

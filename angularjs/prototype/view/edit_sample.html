@@ -1,0 +1,76 @@
+<div ng-cloak>
+
+    <div class='row'>
+        <div class='span5'>
+            <div class='alert alert-info'>
+                <i class='icon-info-sign'></i> The step 1 is <strong>not mandatory</strong>
+                you may skip to step 2.
+            </div>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='span1'><h3>1</h3></div>
+        <div class='span8'>
+
+            <form class='form-inline' ng-submit='createSample()' name='form_new_sample'>
+                <input type='text' name='new_sample_type' class='input-xlarge' ng-model='dataToCollect.newSample.SAMPLE_TYPE' placeholder='New Sample type' required>
+                <input type='submit' value='add' class='btn btn-primary'/>
+            </form>
+
+            <form class='form-inline' ng-repeat='sample in db.samples' ng-cloak>
+                <input type='text' class='input-xlarge' ng-model='sample.DESCRIPTION' required/>
+                <a href='' class='btn btn-warning' ng-click='update(sample);'><i class='icon-edit icon-white'></i> update</a>
+            </form>
+
+        </div>
+    </div>
+
+    <hr/>
+
+    <div class='row'>
+        <div class='span6'>
+            <div class='alert alert-info'>
+                <i class='icon-info-sign'></i> Please select the sample(s) <strong>and</strong> the visit(s) that you want attach together.
+            </div>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='span1'><h3>2</h3></div>
+        <div class='span6'>
+            <form class='form-inline' ng-submit='attach()'>
+                <select ng-change='readAttachedVisit(); readAttachedSample();' ng-model='dataToCollect.study' ng-options='study.DESCRIPTION for study in db.studies'>
+                </select> <input type='submit' value='attach' class='btn btn-primary'/>
+            </form>
+            <form class='form-inline'>
+                <select multiple='multiple' size='10' ng-model='dataToCollect.samples'
+                        ng-options='sample.DESCRIPTION for sample in db.samples' >
+                </select>
+                <select multiple='multiple' size='10' ng-model='dataToCollect.visits'
+                        ng-options='visit.VISIT_NAME for visit in db.attachedVisits' >
+                </select>
+            </form>
+        </div>
+    </div>
+
+    <div class='row' ng-show='dataToCollect.study'>
+        <div class='span1'><h3>3</h3></div>
+        <div class='span8'>
+            <table class='table'>
+                <thead>
+                    <tr><th>STUDY</th><th>VISIT</th><th>SAMPLE</th><th>ACTION</th></tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat='attachedSample in db.attachedSamples' ng-cloak>
+                       <td>{{attachedSample.STUDY_NAME}}</td>
+                       <td>{{attachedSample.VISIT_NAME}}</td>
+                       <td>{{attachedSample.SAMPLE_TYPE}}</td>
+                       <td><input type='submit' class='btn btn-danger' value='delete' ng-click='delete(attachedSample)'/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

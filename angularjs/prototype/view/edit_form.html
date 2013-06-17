@@ -1,0 +1,132 @@
+<div class='row'>
+    <div class='span4'>
+        <div class="alert alert-info">
+            Please select the action you want to perform.
+        </div>
+    </div>
+    <div class='span9'>
+        <label class="radio">
+            <input type="radio" name="whatToDoForm" ng-model='condition.whatToDo' value="new_form">
+            Create a new form.
+        </label>
+        <label class="radio">
+            <input type="radio" name="whatToDoForm" ng-model='condition.whatToDo' value="edit_copy_form">
+            Edit/copy an existing form.
+        </label>
+    </div>
+</div>
+
+<div class='row' ng-show='condition.whatToDo == "edit_copy_form"'>
+    <div class='span9'>
+        <form class='pull-right'>
+            <input type='text' placeholder='Search' ng-model='myFilter.searchForm'/>
+            <span class='help-block'>Use the search box to filter the table.</span>
+        </form>
+        <table class='table table-condensed table-striped'>
+            <thead>
+            <tr>
+                <th>STUDY</th>
+                <th>VISIT</th>
+                <th>SAMPLE</th>
+                <th>FORM NAME</th>
+                <th>FORM DESCRIPTION</th>
+                <th>ACTION</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat = 'form in db.forms'>
+                <td>{{form.STUDY_NAME}}</td>
+                <td>{{form.VISIT_NAME}}</td>
+                <td>{{form.SAMPLE_TYPE}}</td>
+                <td>{{form.FORM_NAME}}</td>
+                <td>{{form.FORM_DESCRIPTION}}</td>
+                <td>
+                    <a href='#' class='btn btn-warning' ng-click='copyForm(form)'><i class='icon-white icon-pencil'></i> copy</a>
+                    <a href='#' class='btn btn-warning' ng-click='editForm(form)'><i class='icon-white icon-edit'></i> update</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class='row' ng-show='condition.whatToDo =="new_form"'>
+    <div class='span9'>
+        <form class='form-inline' ng-submit='showAttributeForm()'>
+            <select ng-model='dataToCollect.study' ng-change='readAttachedVisit()'
+                    ng-options='study.DESCRIPTION for study in db.studies' required>
+
+            </select>
+            <select ng-model='dataToCollect.visit' ng-change='readAttachedSample()'
+                    ng-options='visit.VISIT_NAME for visit in db.visits' required>
+
+            </select>
+            <select ng-model='dataToCollect.sample'
+                    ng-options='sample.SAMPLE_TYPE for sample in db.samples' required>
+
+            </select>
+            <input type='submit' class='btn btn-primary' value='confirm'/>
+        </form>
+    </div>
+</div>
+
+<div class='row' ng-show='condition.formSelected'>
+    <div class='span9'>
+        <form>
+            <fieldset>
+                <legend>Create a new form</legend>
+                <div class='span3'>
+                    <label><strong>Form name</strong></label>
+                    <input type='text' placeholder='{{condition.formSelected}}'/>
+                    <span class='help-block'>You may edit the default form name.</span>
+                </div>
+                <div class='span4'>
+                    <label><strong>Form description</strong></label>
+                    <textarea rows='4' cols='30' placeholder='Use that field if you want to add additional comment'></textarea>
+                </div>
+                <div class='span1'>
+                    <input type="submit" class="btn btn-primary" value='create'>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class='span9'>
+        <table class='table'>
+            <thead>
+            <tr><th>ATTRIBUTE</th><th>PREDEFINED VALUES</th><th>HTML ELEMENT</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <form>
+                    <td>
+                        <select ng-model='dataToCollect.attribute' ng-options='attribute.DESCRIPTION for attribute in db.attributes' required>
+                        </select>
+                    </td>
+                    <td>
+                        <label class="radio">
+                            <input type="radio" name="predefined_value" ng-model='condition.predefined_value'
+                                   value='single' ng-click='filterHtmlElement()'>
+                            Single predefined value.
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="form_what_to_do"  ng-model='condition.predefined_value'
+                                   value="multiple" ng-click='filterHtmlElement()'>
+                            Multiple predefined values.
+                        </label>
+
+                        <select ng-show='condition.predefined_value == "single"' ng-model='dataToCollect.generic_values' ng-options='generic_value.DESCRIPTION for generic_value in db.generic_values'                                        required> </select>
+                        <select ng-show='condition.predefined_value == "multiple"' ng-model='dataToCollect.generic_values' size='15' ng-options='generic_value.DESCRIPTION for generic_value in db.generic_values' multiple='multiple'
+                                required> </select>
+                    </td>
+                    <td>
+                        <select ng-model='dataToCollect.html_element' ng-options='html_element.DESCRIPTION for html_element in db.html_elements' required>
+                        </select>
+                    </td>
+                    <td><input type='submit' value='add' class='btn btn-primary'/></td>
+                </form>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

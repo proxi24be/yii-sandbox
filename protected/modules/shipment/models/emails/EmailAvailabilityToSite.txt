@@ -1,0 +1,23 @@
+{reminder}
+        
+Dear Sir or Madam,
+
+Please find attached the list of biological sample(s) that we would like to ship to the central repository.
+Please forward this message to the relevant person(s) within your team.
+
+It is necessary that you confirm in the Biotracking system if this/these sample(s) can or cannot be sent.
+
+Please first log into the BrEAST website (https://www.br-e-a-s-t.org) using your user ID and password.  
+Then click on the BIOTRACKING link and choose the 'Request for shipment' menu item in the menu bar.
+
+If the sample(s) can be sent, please confirm by checking the provided tick box in the confirm availability field.
+
+If you are not able to send a sample for any reason (e.g. sample is lost, or accidentally destroyed), 
+please update the 'sample status', do not tick the box 'Confirm availability' and report a comment in the 'Reason for change' field.
+
+Please consult the user's manual for further details. The manual can be downloaded from the menu bar in the Biotracking system.
+
+Should you have any questions, please do not hesitate to contact us at breast.translational@bordet.be
+
+Kind regards,
+BrEAST Translational Research Coordinator on behalf of BIG

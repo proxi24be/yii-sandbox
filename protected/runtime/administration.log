@@ -1,0 +1,214 @@
+2013/06/13 11:25:39 [trace] [app.administration.admCRUD] Array
+(
+    [DESCRIPTION] => Array
+        (
+            [0] => Description cannot be blank.
+        )
+
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (95)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 11:29:26 [trace] [app.administration.admCRUD] Array
+(
+    [DESCRIPTION] => Array
+        (
+            [0] => Description cannot be blank.
+        )
+
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (95)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 11:33:37 [trace] [app.administration.admCRUD] Array
+(
+    [DESCRIPTION] => Array
+        (
+            [0] => Description cannot be blank.
+        )
+
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (95)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 11:41:37 [trace] [app.administration.admCRUD] Array
+(
+    [DESCRIPTION] => Array
+        (
+            [0] => Description cannot be blank.
+        )
+
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (95)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 11:41:37 [trace] [app.administration.admCRUD] Array
+(
+    [ID] => 9
+    [DESCRIPTION] => new study edit
+    [ORACLE_CLINICAL_ID] => 
+    [CREATE_TIME] => 1371114446
+    [UPDATE_TIME] => 1371114446
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (96)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:08:14 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:08:36 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:09:34 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:12:58 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:13:27 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:14:38 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:15:30 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:16:48 [trace] [app.administration.admCRUD] unknown model:AdmStudyVisit
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:20:51 [trace] [app.administration.admCRUD] property data is not an object !
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:24:28 [trace] [app.administration.admCRUD] data is an array of object
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (64)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:38:40 [trace] [app.administration.admCRUD] Array
+(
+    [0] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 6
+        )
+
+    [1] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 7
+        )
+
+    [2] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 8
+        )
+
+    [3] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 9
+        )
+
+    [4] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 10
+        )
+
+    [5] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 11
+        )
+
+    [6] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 12
+        )
+
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (45)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:40:18 [trace] [app.administration.admCRUD] Array
+(
+    [0] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 6
+        )
+
+    [1] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 7
+        )
+
+    [2] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 8
+        )
+
+    [3] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 9
+        )
+
+    [4] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 10
+        )
+
+    [5] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 11
+        )
+
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (45)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 12:41:31 [trace] [app.administration.admCRUD] Array
+(
+    [0] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 6
+        )
+
+    [1] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 7
+        )
+
+    [2] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 8
+        )
+
+    [3] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 9
+        )
+
+    [4] => Array
+        (
+            [STUDY_ID] => 1
+            [VISIT_ID] => 10
+        )
+
+)
+
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (43)
+in /home/bluenight/www/breast_reborn/index.php (15)
+2013/06/13 16:23:40 [trace] [app.administration.admCRUD] CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 19 columns STUDY_ID, VISIT_ID, SAMPLE_ID are not unique. The SQL statement executed was: INSERT INTO 'ADM_VISIT_SAMPLE' ("VISIT_ID", "SAMPLE_ID", "STUDY_ID", "CREATE_TIME", "UPDATE_TIME") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)
+in /home/bluenight/www/breast_reborn/protected/modules/administration/controllers/AdmCRUDController.php (51)
+in /home/bluenight/www/breast_reborn/index.php (15)

@@ -1,0 +1,39 @@
+
+
+Account number : {account_number}
+Study Number: {study_number}
+
+Object: Aphinity biological sample shipment from site to central repository
+
+
+Dear Sir or Madam,
+
+Please find in attachment the list of biological samples that you will need to pick up at location:
+
+{centre}
+{centre_name}
+{address_street}
+{address_postcode}  {address_city}
+{country} 
+
+Contact person: {firstname} {lastname}
+  Contact email : {email}
+Contact phone : {phone}
+    Contact fax   : {fax}
+
+The samples should be shipped to:
+
+Tim Rackham
+Specimen Services (GATE F)
+B & C Group s.a.
+Watson and Crick Hill
+Rue Granbonpré 11
+B-1348 Mont-Saint-Guibert
+Belgium
+Tel.:+32(0)10 238 858
+Fax.:+32(0)10 238 851
+Opening hours: Mon-Fri, 08h00-16h00
+
+Kind regards,
+BrEAST translational Research Coordinator 
+on behalf of BIG

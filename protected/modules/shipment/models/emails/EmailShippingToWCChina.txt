@@ -1,0 +1,38 @@
+
+
+Account number : {account_number}
+Study Number: {study_number}
+
+Object: Aphinity biological sample shipment from site to central repository
+
+
+Dear Sir or Madam,
+
+Please find in attachment the list of biological samples that you will need to pick up at location:
+
+{centre}
+{centre_name}
+{address_street}
+{address_postcode}  {address_city}
+{country}
+
+Contact person: {firstname} {lastname}
+  Contact email : {email}
+Contact phone : {phone}
+    Contact fax   : {fax}
+
+These samples should be shipped at -70° C on dry ice.
+
+The samples should be shipped to:
+
+Yong Zhang
+Quintiles Medical Research and Development(Beijing) Ltd.
+Unit 901-919, Office Tower 3, Sun Dong An Plaza
+138 Wangfujing Ave, Dongcheng District, Beijing 100006, China
+Tel: + 8610 59117923
+Fax: + 8610 59117992
+Opening hours: Mon-Fri, 09h00-17h00
+
+Kind regards,
+BrEAST translational Research Coordinator
+on behalf of BIG

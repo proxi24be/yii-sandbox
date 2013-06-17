@@ -1,0 +1,23 @@
+PHPUnit 3.6.10 by Sebastian Bergmann.
+
+Configuration read from D:\wamp\www\breast_reborn\protected\tests\phpunit.xml
+
+F
+
+Time: 0 seconds, Memory: 8.25Mb
+
+There was 1 failure:
+
+1) ConsoleText::testSuccess
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'ok'
++'nok'
+
+D:\wamp\www\breast_reborn\protected\tests\unit\ConsoleTest.php:8
+D:\wamp\bin\php\php5.3.10\phpunit:46
+
+FAILURES!
+Tests: 1, Assertions: 1, Failures: 1.
