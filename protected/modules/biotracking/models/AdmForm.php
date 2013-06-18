@@ -34,4 +34,11 @@ class AdmForm extends AdminActiveRecord {
             array('SHORT_DESCRIPTION', 'required'),
         );
     }
+
+    public function relations()
+    {
+        return array(
+            'studies' => array(SELF::MANY_MANY, 'AdmStudy', 'ADM_STUDY_FORM(FORM_ID, STUDY_ID)'),
+        );
+    }
 }

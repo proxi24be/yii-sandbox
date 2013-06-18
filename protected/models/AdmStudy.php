@@ -32,6 +32,7 @@ class AdmStudy extends AdminActiveRecord {
         return array(
             'visits' => array(self::MANY_MANY, 'AdmVisit', 'ADM_STUDY_VISIT(STUDY_ID, VISIT_ID)'),
             'samples' => array(self::MANY_MANY, 'AdmSample', 'ADM_VISIT_SAMPLE(STUDY_ID, SAMPLE_ID)'),
+            'forms' => array(self::MANY_MANY, 'AdmForm', 'ADM_STUDY_FORM(STUDY_ID, FORM_ID)'),
         );
     }
 
