@@ -6,31 +6,21 @@
  */
 
 Yii::import('application.modules.biotracking.models.*');
-
 use application\components\helper as helper ;
 
 class AdmCRUDController extends AdminAbstractController {
 
-    /**
-     * @param $model
-     * @param null $id
-     *
-     * Thanks to YII if $model parameter is not sent,
-     * a CHTTPException is automatically raised.
-     */
-    public function actionRead ($model, $id = null)
+    public function actionRead ($model)
     {
         try
         {
             $activeRecord = helper\AdmCrudFactory::getInstance($model);
-            if (isset($id))
-                $data = $activeRecord->findByPk($id);
-            else
-                $data = $activeRecord->findAll();
-
+            // We do not want to use the parameter model with the AR.
+            unset($_GET['model']);
+            $data = $activeRecord->findAllByAttributes($_GET);
             echo CJSON::encode($data);
         }
-        catch (Exception $e)
+        catch (\Exception $e)
         {
             echo CJSON::encode(RequestMessage::$FAILED);
         }
@@ -45,7 +35,7 @@ class AdmCRUDController extends AdminAbstractController {
             if ($genericWrapperModel->create($jsonConverterModel))
                 $request = RequestMessage::$SUCCESS;
         }
-        catch (Exception $e)
+        catch (\Exception $e)
         {
             $request = RequestMessage::$FAILED;
             Yii::trace($e->getMessage(), 'app.administration.admCRUD');
@@ -58,9 +48,9 @@ class AdmCRUDController extends AdminAbstractController {
     {
         try
         {
-            throw new Exception ('not yet implemented');
+            throw new \Exception ('not yet implemented');
         }
-        catch (Exception $e)
+        catch (\Exception $e)
         {
             $request = RequestMessage::$FAILED;
             Yii::trace($e->getMessage(), 'app.administration.admCRUD');
