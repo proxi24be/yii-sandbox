@@ -4,8 +4,9 @@ class m130618_081310_adm_news extends CDbMigration
 {
 	public function up()
 	{
-        $this->createTable('ADM_NEWS', array(
-           'ID' => 'pk',
+        $this->createTable('ADM_NEWS',
+            array(
+            'ID' => 'pk',
             'TITLE' => 'varchar2(256)',
             'CONTENT' => 'varchar2(8192)',
             'CREATE_TIME' => 'date',

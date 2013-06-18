@@ -6,7 +6,7 @@
  * Date: 20/01/13
  * Time: 18:11
  */
-class News extends MySqliteActiveRecord
+class AdmNews extends MySqliteActiveRecord
 {
     public static function model($className=__CLASS__)
     {
@@ -23,14 +23,14 @@ class News extends MySqliteActiveRecord
      */
     public function tableName()
     {
-        return 'NEWS';
+        return 'ADM_NEWS';
     }
 
     public function scopes()
     {
         return array(
             'desc'=>array(
-                "order"=>"LAST_UPDATED DESC"
+                "order"=>"UPDATE_TIME DESC"
             ),
 
         );

@@ -12,7 +12,7 @@ class NewsWidget extends CWidget
 
     public function init()
     {
-        $this->_news= News::model()->desc()->recently(2)->findAll();
+        $this->_news= AdmNews::model()->desc()->recently(2)->findAll();
     }
 
     public function getData()

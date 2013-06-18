@@ -3,7 +3,6 @@
  * User: bluenight
  * Date: 6/17/13
  * Time: 11:29 AM
- * To change this template use File | Settings | File Templates.
  */
 
 SetupPrototype.service('VisitSampleModel',

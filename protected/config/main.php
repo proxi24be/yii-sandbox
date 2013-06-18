@@ -60,7 +60,7 @@ return array(
         'dbSqlite'=>
             array(
                     "class"=>"CDbConnection",
-                    'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/data.db',
+                    'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/breast_reborn.db',
                  ),
 
         'db'=>

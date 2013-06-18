@@ -39,9 +39,9 @@ class NewsController extends Controller {
     public function actionShow($id=0)
     {
         if (0 == $id)
-            $news = News::model()->desc()->findAll();
+            $news = AdmNews::model()->desc()->findAll();
         else
-            $news = News::model()->findAll("ID=:ID", array(":ID" => $id));
+            $news = AdmNews::model()->findAll("ID=:ID", array(":ID" => $id));
 
         $this->render("news", array("news" => $news));
     }
