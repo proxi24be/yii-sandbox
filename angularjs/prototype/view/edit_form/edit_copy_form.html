@@ -1,0 +1,33 @@
+<div class='row'>
+    <div class='span9'>
+        <form class='pull-right'>
+            <input type='text' placeholder='Search' ng-model='myFilter.searchForm'/>
+            <span class='help-block'>Use the search box to filter the table.</span>
+        </form>
+        <table class='table table-condensed table-striped'>
+            <thead>
+            <tr>
+                <th>STUDY</th>
+                <th>VISIT</th>
+                <th>SAMPLE</th>
+                <th>FORM NAME</th>
+                <th>FORM DESCRIPTION</th>
+                <th>ACTION</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat = 'form in db.forms'>
+                <td>{{form.STUDY_NAME}}</td>
+                <td>{{form.VISIT_NAME}}</td>
+                <td>{{form.SAMPLE_TYPE}}</td>
+                <td>{{form.FORM_NAME}}</td>
+                <td>{{form.FORM_DESCRIPTION}}</td>
+                <td>
+                    <a href='#' class='btn btn-warning' ng-click='copyForm(form)'><i class='icon-white icon-pencil'></i> copy</a>
+                    <a href='#' class='btn btn-warning' ng-click='editForm(form)'><i class='icon-white icon-edit'></i> update</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

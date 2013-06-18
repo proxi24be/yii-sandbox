@@ -3,7 +3,6 @@
  * User: bluenight
  * Date: 6/17/13
  * Time: 12:14 PM
- * To change this template use File | Settings | File Templates.
  */
 
 
@@ -82,6 +81,9 @@ SetupPrototype.controller('FormController',
         $scope.db = {};
         $scope.condition = {};
         $scope.setStudy();
+        $scope.myConfigUrl = {};
+        $scope.myConfigUrl.newForm = myConfig.angularUrl + '/angularjs/prototype/view/edit_form/new_form.html';
+        $scope.myConfigUrl.editCopyForm = myConfig.angularUrl + '/angularjs/prototype/view/edit_form/edit_copy_form.html';
         //init end.
 
     });
