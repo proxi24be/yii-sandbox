@@ -31,7 +31,7 @@ class GenericWrapperModel {
             // A validation error has occured.
             // A required attribute is missing.
             if (!$activeRecord->save())
-                throw new Exception(print_r($activeRecord->getErrors(), true));
+                throw new \Exception(print_r($activeRecord->getErrors(), true));
         }
         return true;
     }

@@ -20,7 +20,8 @@ class AdmCrudFactory {
             case 'AdmProperty' : return new \AdmProperty();
             case 'AdmGenericValue' : return new \AdmGenericValue();
             case 'AdmHtmlElement' : return new \AdmHtmlElement();
-            default : throw new Exception ('unknown model:'.$modelName);
+            case 'AdmForm' : return new \AdmForm();
+            default : throw new \Exception ('unknown model:'.$modelName);
         }
     }
 
