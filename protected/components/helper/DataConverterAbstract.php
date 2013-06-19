@@ -47,19 +47,7 @@ abstract class DataConverterAbstract {
     public function getInstanceModel ()
     {
         $modelName = $this->getModelName();
-
-        switch($modelName) {
-            case 'AdmStudy' : return new \AdmStudy();
-            case 'AdmVisit' : return new \AdmVisit();
-            case 'AdmSample' : return new \AdmSample();
-            case 'AdmStudyVisit' : return new \AdmStudyVisit();
-            case 'AdmVisitSample' : return new \AdmVisitSample();
-            case 'AdmProperty' : return new \AdmProperty();
-            case 'AdmGenericValue' : return new \AdmGenericValue();
-            case 'AdmHtmlElement' : return new \AdmHtmlElement();
-            case 'AdmForm' : return new \AdmForm();
-            default : throw new \Exception ('unknown model:'.$modelName);
-        }
+        return AdmCRUDSimpleFactory::getInstance($modelName);
     }
 
     public function getErrorMessage ()
