@@ -23,17 +23,18 @@
         <form>
             <fieldset>
                 <legend>Create a new form</legend>
-                <div class='span3'>
+                <div class='span4'>
                     <label><strong>Form name</strong></label>
-                    <input type='text' placeholder='{{condition.formSelected}}'/>
+                    <input type='text' class='span4' ng-model='dataToCollect.form.SHORT_DESCRIPTION' placeholder='{{dataToCollect.form.SHORT_DESCRIPTION}}'/>
                     <span class='help-block'>You may edit the default form name.</span>
                 </div>
-                <div class='span4'>
+                <div class='span3'>
                     <label><strong>Form description</strong></label>
-                    <textarea rows='4' cols='30' placeholder='Use that field if you want to add additional comment'></textarea>
+                    <textarea rows='4' cols='30'  ng-model='dataToCollect.form.LONG_DESCRIPTION'
+                              placeholder='Use that field if you want to add additional comment'></textarea>
                 </div>
                 <div class='span1'>
-                    <input type="submit" class="btn btn-primary" value='create'>
+                    <input type="submit" class="btn btn-primary" ng-click='createForm()' value='create'>
                 </div>
             </fieldset>
         </form>

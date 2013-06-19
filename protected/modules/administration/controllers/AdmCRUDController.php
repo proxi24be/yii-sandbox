@@ -14,7 +14,8 @@ class AdmCRUDController extends AdminAbstractController {
     {
         try
         {
-            $activeRecord = helper\AdmCrudFactory::getInstance($model);
+            $dataConverter = new helper\TextDataConverter($_GET);
+            $activeRecord = $dataConverter->getInstanceModel();
             // We do not want to use the parameter model with the AR.
             unset($_GET['model']);
             $data = $activeRecord->findAllByAttributes($_GET);
@@ -22,6 +23,7 @@ class AdmCRUDController extends AdminAbstractController {
         }
         catch (\Exception $e)
         {
+            Yii::trace($e->getMessage(), 'app.administration.AdmCRUD');
             echo CJSON::encode(RequestMessage::$FAILED);
         }
     }
@@ -30,9 +32,8 @@ class AdmCRUDController extends AdminAbstractController {
     {
         try
         {
-            $jsonConverterModel = new helper\JsonConverterModel(file_get_contents('php://input'));
             $genericWrapperModel = new helper\GenericWrapperModel();
-            if ($genericWrapperModel->create($jsonConverterModel))
+            if ($genericWrapperModel->create(new helper\JsonDataConverter(file_get_contents('php://input'))));
                 $request = RequestMessage::$SUCCESS;
         }
         catch (\Exception $e)

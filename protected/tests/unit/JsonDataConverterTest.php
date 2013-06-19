@@ -20,29 +20,21 @@ class JsonDataConverterTest extends \CTestCase {
     public function testJsonEmpty () {
         $input = '';
         $this->dataConverter = new helper\JsonDataConverter($input);
-        $this->assertFalse($this->dataConverter->convert());
-        echo $this->dataConverter->getErrorMessage() . "\n";
     }
 
     public function testConstraintModelExist () {
         $input = '{"data": "name"}';
         $this->dataConverter = new helper\JsonDataConverter($input);
-        $this->assertFalse($this->dataConverter->convert());
-        echo $this->dataConverter->getErrorMessage() . "\n";
     }
 
     public function testConstraintDataExist () {
         $input = '{"model": "name"}';
         $this->dataConverter = new helper\JsonDataConverter($input);
-        $this->assertFalse($this->dataConverter->convert());
-        echo $this->dataConverter->getErrorMessage() . "\n";
     }
 
     public function testGetModelName () {
         $input = '{"model": "name", "data" : {} }';
         $this->dataConverter = new helper\JsonDataConverter($input);
-        if (!$this->dataConverter->convert())
-            echo $this->dataConverter->getErrorMessage() . '\n';
 
         $this->assertEquals($this->dataConverter->getModelName(), "name");
     }
@@ -50,8 +42,6 @@ class JsonDataConverterTest extends \CTestCase {
     public function testGetData () {
         $input = '{"model": "name", "data" : {} }';
         $this->dataConverter = new helper\JsonDataConverter($input);
-        if (!$this->dataConverter->convert())
-            echo $this->dataConverter->getErrorMessage() . '\n';
 
         $this->assertTrue(count($this->dataConverter->getData()) == 0);
     }
@@ -59,8 +49,6 @@ class JsonDataConverterTest extends \CTestCase {
     public function testGetDataOnSingleObject () {
         $input = '{"model": "name", "data" : {"ID":"45"} }';
         $this->dataConverter = new helper\JsonDataConverter($input);
-        if (!$this->dataConverter->convert())
-            echo $this->dataConverter->getErrorMessage() . '\n';
 
         $this->assertEquals($this->dataConverter->getData()[0], array('ID' => '45'));
     }
@@ -68,8 +56,6 @@ class JsonDataConverterTest extends \CTestCase {
     public function testGetDataOnMultipleObjects () {
         $input = '{"model": "name", "data" : [{"ID":"45"}, {"ID":"1"}] }';
         $this->dataConverter = new helper\JsonDataConverter($input);
-        if (!$this->dataConverter->convert())
-            echo $this->dataConverter->getErrorMessage() . "\n";
 
         $expected = array();
         $expected[]['ID'] = 45;

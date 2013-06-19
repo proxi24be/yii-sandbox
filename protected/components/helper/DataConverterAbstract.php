@@ -23,12 +23,12 @@ abstract class DataConverterAbstract {
     public function __construct ($input) {
         $this->input = $input;
         $this->data = array();
+        // An implicit conversion is done.
+        // So one does not need to call it.
+        $this->convert();
     }
 
-    /**
-     * @return boolean true if the conversion did complete successfully otherwise false.
-     */
-    public abstract function convert ();
+    protected abstract function convert ();
 
     /**
      * @return an array
@@ -47,6 +47,7 @@ abstract class DataConverterAbstract {
     public function getInstanceModel ()
     {
         $modelName = $this->getModelName();
+
         switch($modelName) {
             case 'AdmStudy' : return new \AdmStudy();
             case 'AdmVisit' : return new \AdmVisit();

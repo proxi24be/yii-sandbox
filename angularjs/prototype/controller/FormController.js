@@ -5,17 +5,8 @@
  * Time: 12:14 PM
  */
 
-
 SetupPrototype.controller('FormController',
     function($scope, $http, GenericModel, StudyVisitModel, VisitSampleModel){
-
-        $scope.formToDo = function ()
-        {
-            if (typeof $scope.dataToCollect.formToDo != 'undefined')
-            {
-
-            }
-        };
 
         $scope.setStudy = function ()
         {
@@ -66,8 +57,10 @@ SetupPrototype.controller('FormController',
                         $scope.db.html_elements = response.data;
                     });
 
+                var date = new Date();
                 $scope.condition.formSelected = $scope.dataToCollect.study.DESCRIPTION + '_'
-                    + $scope.dataToCollect.visit.VISIT_NAME + '_' + $scope.dataToCollect.sample.SAMPLE_TYPE;
+                    + $scope.dataToCollect.visit.VISIT_NAME.replace(' ', '_') + '_' + $scope.dataToCollect.sample.SAMPLE_TYPE;
+                $scope.dataToCollect.form.SHORT_DESCRIPTION = $scope.condition.formSelected + '_' + date.getTime();
             }
         };
 
@@ -76,12 +69,45 @@ SetupPrototype.controller('FormController',
 
         };
 
+        $scope.createForm = function ()
+        {
+            try
+            {
+                var data = {};
+                data.model = 'AdmForm';
+                data.data = {};
+                data.data.SHORT_DESCRIPTION = $scope.dataToCollect.form.SHORT_DESCRIPTION;
+                if (typeof $scope.dataToCollect.form.LONG_DESCRIPTION != 'undefined')
+                    data.data.LONG_DESCRIPTION = $scope.dataToCollect.form.LONG_DESCRIPTION;
+                GenericModel.create($http, data)
+                    .then(function(response) {
+                        if (response.data.request == 'success')
+                        // The insertion has been performed correctly.
+                        {
+                            var params = {};
+                            params.model = 'AdmForm';
+                            params.SHORT_DESCRIPTION = data.data.SHORT_DESCRIPTION;
+                            // We want to retrieve the ID of the new element created.
+                            GenericModel.read($http, params)
+                                .then(function(response){
+                                    console.log(response.data);
+                                });
+                        }
+                    });
+            }
+            catch (e)
+            {
+                console.log(e);
+            }
+        }
+
         //init start.
         $scope.dataToCollect = {};
         $scope.db = {};
         $scope.condition = {};
         $scope.setStudy();
         $scope.myConfigUrl = {};
+        $scope.dataToCollect.form = {};
         $scope.myConfigUrl.newForm = myConfig.angularUrl + '/angularjs/prototype/view/edit_form/new_form.html';
         $scope.myConfigUrl.editCopyForm = myConfig.angularUrl + '/angularjs/prototype/view/edit_form/edit_copy_form.html';
         //init end.
