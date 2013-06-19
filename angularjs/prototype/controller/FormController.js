@@ -77,6 +77,7 @@ SetupPrototype.controller('FormController',
                 data.model = 'AdmForm';
                 data.data = {};
                 data.data.SHORT_DESCRIPTION = $scope.dataToCollect.form.SHORT_DESCRIPTION;
+                data.data.STUDY_ID = $scope.dataToCollect.study.ID;
                 if (typeof $scope.dataToCollect.form.LONG_DESCRIPTION != 'undefined')
                     data.data.LONG_DESCRIPTION = $scope.dataToCollect.form.LONG_DESCRIPTION;
                 GenericModel.create($http, data)

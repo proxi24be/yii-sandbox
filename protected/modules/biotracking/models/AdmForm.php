@@ -52,7 +52,7 @@ class AdmForm extends AdminActiveRecord {
             'RelationBehavior' => array(
                 'class' => 'ext.behaviors.RelationBehavior',
                 'model' => 'AdmStudyForm',
-                'attributes' => array('FORM_ID' => 'ID', 'STUDY_ID' => 'STUDY_ID')
+                'attributes' => array('ID' => 'FORM_ID', 'STUDY_ID' => 'STUDY_ID')
             )
         );
         return CMap::mergeArray(parent::behaviors(), $newBehavior);

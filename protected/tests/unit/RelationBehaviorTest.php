@@ -20,7 +20,7 @@ class RelationBehaviorTest extends CDbTestCase {
 
     public function tearDown()
     {
-        
+
     }
 
     public function testCreationRelationParameter()
