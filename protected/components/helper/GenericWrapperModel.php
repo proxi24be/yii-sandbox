@@ -10,7 +10,6 @@ use application\components\helper as helper;
 
 class GenericWrapperModel {
 
-
     public function create (helper\JsonConverterModel $jsonConverterModel)
     {
         $matrix = $jsonConverterModel->getData();
