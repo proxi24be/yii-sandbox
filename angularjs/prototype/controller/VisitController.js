@@ -26,10 +26,9 @@ SetupPrototype.controller('VisitController',
         {
             try
             {
-                $scope.dataToCollect.visit = {};
-                $scope.dataToCollect.visit.model = 'AdmVisit';
-                $scope.dataToCollect.visit.data = $scope.dataToCollect.newVisit;
-                GenericModel.create($http, $scope.dataToCollect.visit)
+                httpParam.pushData($scope.dataToCollect.newVisit);
+                httpParam.setModel('AdmVisit');
+                GenericModel.create($http, httpParam.flushParams())
                     .then(function(response){
                         if (response.data.request =='success')
                         {
@@ -47,7 +46,7 @@ SetupPrototype.controller('VisitController',
             }
             catch (e)
             {
-
+                console.log(e);
             }
         };
 
@@ -66,17 +65,13 @@ SetupPrototype.controller('VisitController',
         {
             try
             {
-                var data = {};
-                var i = 0 ;
                 var studyID = $scope.dataToCollect.study.ID ;
-                var array = new Array();
 
                 for (index in $scope.dataToCollect.visits)
-                    array[i++] = {STUDY_ID : studyID, VISIT_ID : $scope.dataToCollect.visits[index].ID};
+                    httpParam.pushData({STUDY_ID : studyID, VISIT_ID : $scope.dataToCollect.visits[index].ID});
 
-                data.model = 'AdmStudyVisit';
-                data.data = array;
-                GenericModel.create($http, data)
+                httpParam.setModel('AdmStudyVisit');
+                GenericModel.create($http, httpParam.flushParams())
                     .then(function(response){
                         if(response.data.request == 'success')
                         {
@@ -123,6 +118,7 @@ SetupPrototype.controller('VisitController',
         $scope.setStudies();
         $scope.setVisits();
         bootstrap.init();
+        httpParam.resetParams();
         // init end.
     });
 

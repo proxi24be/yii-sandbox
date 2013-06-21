@@ -40,11 +40,9 @@ SetupPrototype.controller('SampleController',
         {
             try
             {
-                var sample  = {};
-                sample.model = 'AdmSample';
-                sample.data = {};
-                sample.data.DESCRIPTION = $scope.dataToCollect.newSample.SAMPLE_TYPE;
-                GenericModel.create($http, sample)
+                httpParam.setModel('AdmSample');
+                httpParam.pushData({DESCRIPTION : $scope.dataToCollect.newSample.SAMPLE_TYPE});
+                GenericModel.create($http, httpParam.flushParams())
                     .then(function(response) {
                         if (response.data.request == 'success')
                         {
@@ -67,20 +65,18 @@ SetupPrototype.controller('SampleController',
                     && typeof $scope.dataToCollect.visits != 'undefined'
                     && typeof $scope.dataToCollect.samples != 'undefined')
                 {
-                    var data = {};
-                    data.model = 'AdmVisitSample';
+
+                    httpParam.setModel('AdmVisitSample');
                     var visits = $scope.dataToCollect.visits;
                     var samples = $scope.dataToCollect.samples;
                     var studyID = $scope.dataToCollect.study.ID;
-                    var values = new Array();
-                    var i = 0;
+                    var v,s;
                     for (s in samples)
                     {
                         for (v in visits)
-                            values[i++] = {VISIT_ID : visits[v].ID, SAMPLE_ID : samples[s].ID, STUDY_ID : studyID};
+                            httpParam.pushData({VISIT_ID : visits[v].ID, SAMPLE_ID : samples[s].ID, STUDY_ID : studyID});
                     }
-                    data.data = values;
-                    GenericModel.create($http, data)
+                    GenericModel.create($http, httpParam.flushParams())
                         .then(function(response){
                             if (response.data.request == 'success')
                                 console.log('operation completed');
@@ -115,5 +111,6 @@ SetupPrototype.controller('SampleController',
         $scope.dataToCollect = {};
         $scope.readSample();
         $scope.readStudy();
+        httpParam.resetParams();
         // End init.
     });

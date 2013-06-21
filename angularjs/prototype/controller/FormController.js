@@ -73,14 +73,16 @@ SetupPrototype.controller('FormController',
         {
             try
             {
+                httpParam.setModel('AdmForm');
                 var data = {};
-                data.model = 'AdmForm';
-                data.data = {};
-                data.data.SHORT_DESCRIPTION = $scope.dataToCollect.form.SHORT_DESCRIPTION;
-                data.data.STUDY_ID = $scope.dataToCollect.study.ID;
+                data.DESCRIPTION = $scope.dataToCollect.form.SHORT_DESCRIPTION;
+                data.STUDY_ID = $scope.dataToCollect.study.ID;
+
                 if (typeof $scope.dataToCollect.form.LONG_DESCRIPTION != 'undefined')
-                    data.data.LONG_DESCRIPTION = $scope.dataToCollect.form.LONG_DESCRIPTION;
-                GenericModel.create($http, data)
+                    data.LONG_DESCRIPTION = $scope.dataToCollect.form.LONG_DESCRIPTION;
+
+                httpParam.pushData(data);
+                GenericModel.create($http, httpParam.flushParams())
                     .then(function(response) {
                         if (response.data.request == 'success')
                         // The insertion has been performed correctly.
@@ -111,6 +113,7 @@ SetupPrototype.controller('FormController',
         $scope.dataToCollect.form = {};
         $scope.myConfigUrl.newForm = myConfig.angularUrl + '/angularjs/prototype/view/edit_form/new_form.html';
         $scope.myConfigUrl.editCopyForm = myConfig.angularUrl + '/angularjs/prototype/view/edit_form/edit_copy_form.html';
+        httpParam.resetParams();
         //init end.
 
     });

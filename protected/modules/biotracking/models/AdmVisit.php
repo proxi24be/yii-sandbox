@@ -22,6 +22,14 @@ class AdmVisit extends MyBiotrackingActiveRecord {
         return self::getBiotrackingDbConnection();
     }
 
+    public function rules()
+    {
+        return array(
+          array('VISIT_NAME', 'required'),
+          array('VISIT_INTERVAL', 'safe'),
+        );
+    }
+
     /**
      * @return string the associated database table name
      */

@@ -29,6 +29,47 @@ $publish = Yii::app()->getAssetManager()->publish($angularPath);
         }
     }
 
+    var httpParam =
+    {
+        params : <?php echo $httpParam; ?>,
+        // Data is redundant with params.data
+        // however for better performance with push
+        // it is better to not go through too many level ( httpParam.data vs httpParam.params.data)
+        data : [],
+
+        resetParams : function () {
+            httpParam.params.data = [];
+            httpParam.params.model = '';
+            httpParam.data = [];
+        },
+
+        setModel : function (modelName) {
+            httpParam.params.model = modelName;
+        },
+
+        setData : function (data) {
+            httpParam.data = data;
+        },
+
+        flushParams : function () {
+            httpParam.params.data = httpParam.data;
+            // Create a temporary copy.
+            var params = {};
+            for (var p in httpParam.params)
+                params[p] = httpParam.params[p];
+
+            // Reset the current data otherwise it could be
+            // troublesome to send the same data !
+            httpParam.resetParams();
+
+            return params ;
+        },
+
+        pushData : function (newData) {
+            httpParam.data.push(newData);
+        }
+    }
+
 </script>
 
 <div id='ng-app' ng-app='SetupPrototype' class='ui-corner-all ui-widget-content ng-app:SetupPrototype'>

@@ -18,7 +18,7 @@ class AdmCRUDController extends AdminAbstractController {
             $activeRecord = $httpParam->getCActiveRecord();
             if (!isset($activeRecord))
                 throw new Exception('instance object does not exist');
-            // We do not want to use the parameter model with the AR.
+
             $data = $activeRecord->findAllByAttributes($httpParam->getData());
             echo CJSON::encode($data);
         }

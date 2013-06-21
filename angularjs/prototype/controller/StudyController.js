@@ -21,11 +21,9 @@ SetupPrototype.controller('StudyController',
         {
             try
             {
-                var newStudy = {};
-                newStudy.data = {};
-                newStudy.model = 'AdmStudy';
-                newStudy.data.DESCRIPTION = $scope.dataToCollect.newStudy;
-                var httpPromise = GenericModel.create($http, newStudy);
+                httpParam.setModel('AdmStudy');
+                httpParam.pushData({DESCRIPTION : $scope.dataToCollect.newStudy});
+                var httpPromise = GenericModel.create($http, httpParam.flushParams());
                 httpPromise.then(function(response){
                     if(response.data.request == 'success')
                     {
@@ -48,16 +46,7 @@ SetupPrototype.controller('StudyController',
         {
             try
             {
-                var updStudy = {};
-                updStudy.model = 'AdmStudy';
-                updStudy.data = study;
-                var httpPromise = GenericModel.update($http, updStudy);
-                httpPromise.then(function(response){
-                    if(response.data.request == 'success')
-                        console.log('update success');
-                    else
-                        console.log('update failed');
-                });
+                ;
             }
             catch (e)
             {
@@ -69,6 +58,7 @@ SetupPrototype.controller('StudyController',
         $scope.db = {};
         $scope.dataToCollect = {};
         $scope.show();
+        httpParam.resetParams();
         // end init.
     }
 );
