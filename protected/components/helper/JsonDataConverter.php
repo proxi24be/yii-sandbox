@@ -7,6 +7,12 @@
 
 namespace application\components\helper;
 
+/**
+ * Class JsonDataConverter
+ * @package application\components\helper
+ * @deprecated use HttpJsonParam instead
+ */
+
 class JsonDataConverter extends DataConverterAbstract {
 
     /**

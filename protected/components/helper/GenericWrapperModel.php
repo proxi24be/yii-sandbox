@@ -29,7 +29,7 @@ class GenericWrapperModel {
                $activeRecord = $dataConverter->getInstanceModel();
                // Mass assignation.
                $activeRecord->attributes = $params;
-               
+
                // A validation error has occured.
                // A required attribute is missing.
                if (!$activeRecord->save())

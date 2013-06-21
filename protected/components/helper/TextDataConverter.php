@@ -7,6 +7,12 @@
 
 namespace application\components\helper;
 
+/**
+ * Class TextDataConverter
+ * @package application\components\helper
+ * @deprecated use HttpTextParam instead.
+ */
+
 class TextDataConverter extends DataConverterAbstract {
 
     /**

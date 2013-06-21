@@ -8,8 +8,10 @@
 namespace application\components\helper;
 
 /**
+ *
  * Class DataConverterAbstract
  * @package application\components\helper
+ * @deprecated use HttpParamAbstract instead.
  *
  * This class should be extended for every mime/type data that we want to process.
  */
