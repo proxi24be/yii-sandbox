@@ -14,11 +14,12 @@ class AdmCRUDController extends AdminAbstractController {
     {
         try
         {
-            $dataConverter = new helper\TextDataConverter($_GET);
-            $activeRecord = $dataConverter->getInstanceModel();
+            $httpParam = new helper\HttpFormParam($_GET);
+            $activeRecord = $httpParam->getCActiveRecord();
+            if (!isset($activeRecord))
+                throw new Exception('instance object does not exist');
             // We do not want to use the parameter model with the AR.
-            unset($_GET['model']);
-            $data = $activeRecord->findAllByAttributes($_GET);
+            $data = $activeRecord->findAllByAttributes($httpParam->getData());
             echo CJSON::encode($data);
         }
         catch (\Exception $e)
@@ -33,7 +34,7 @@ class AdmCRUDController extends AdminAbstractController {
         try
         {
             $genericWrapperModel = new helper\GenericWrapperModel();
-            if ($genericWrapperModel->create(new helper\JsonDataConverter(file_get_contents('php://input'))));
+            if ($genericWrapperModel->create(new helper\HttpJsonParam(file_get_contents('php://input'))));
                 $request = RequestMessage::$SUCCESS;
         }
         catch (\Exception $e)

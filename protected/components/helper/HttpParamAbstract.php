@@ -35,6 +35,12 @@ abstract class  HttpParamAbstract {
         $this->input = $input;
     }
 
+    /**
+     * @return mixed true if the conversion did complete successfully otherwise false.
+     *
+     * That method need to be implemented following the enctype that has been used during
+     * the request.
+     */
     public abstract function convert ();
 
     public function getData () {
@@ -43,6 +49,10 @@ abstract class  HttpParamAbstract {
 
     public function getModelName () {
         return $this->model;
+    }
+
+    public function getCActiveRecord  () {
+        return AdmCRUDSimpleFactory::getInstance($this->getModelName());
     }
 
 }

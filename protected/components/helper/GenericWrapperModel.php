@@ -12,21 +12,17 @@ class GenericWrapperModel {
 
     private $_errorMessage;
 
-    /**
-     * @param DataConverterAbstract $dataConverter
-     * @return bool true if the creation operation did complete successfully otherwise false.
-     * @throws \Exception
-     */
-    public function create (helper\DataConverterAbstract $dataConverter)
+
+    public function create (helper\HttpParamAbstract $httpParam)
     {
        try
        {
-           $matrix = $dataConverter->getData();
+           $matrix = $httpParam->getData();
            // An issue performance will rise up if there are too many records to create.
            // In that situation it is better to switch from activerecord to pure sql + transaction.
            foreach ($matrix as $params)
            {
-               $activeRecord = $dataConverter->getInstanceModel();
+               $activeRecord = $httpParam->getCActiveRecord();
                // Mass assignation.
                $activeRecord->attributes = $params;
 
